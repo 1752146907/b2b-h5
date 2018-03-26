@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>个人资料</title>
+    <meta name="keywords" content="经销商店铺"/>
+    <meta name="description" content="经销商店铺"/>
+    <meta name="title" content="经销商店铺"/>
+    <meta content="telephone=no,email=no,address=no" name="format-detection"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="blank"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,minimal-ui"/>
+    <!--开始css引入-->
+    <!--本页专用样式-->
+    <link rel="stylesheet" href="css/personal.css"/>
+    <!--结束css引入-->
+    <!--引入js文件开始-->
+    <script src="../common-assets/js/flexible.js"></script>
+    <script src="../common-assets/js/flexible_css.js"></script>
+    <!--引入jq库文件-->
+    <script src="../common-assets/js/jquery-2.2.3.min.js"></script>
+    <!--引入全局效果配置文件-->
+    <!--引入js文件结束-->
+    <!-- Mobiscroll JS and CSS Includes -->
+    <link href="../common-assets/mobiscroll/css/animation.css" rel="stylesheet" type="text/css" />
+    <link href="../common-assets/mobiscroll/css/icons.css" rel="stylesheet" type="text/css" />
+    <link href="../common-assets/mobiscroll/css/frame.css" rel="stylesheet" type="text/css" />
+    <link href="../common-assets/mobiscroll/css/scroller.css" rel="stylesheet" type="text/css" />
+    <link href="../common-assets/mobiscroll/css/image.css" rel="stylesheet" type="text/css" />
+    <link href="../common-assets/mobiscroll/css/android-holo-light.css" rel="stylesheet" type="text/css" />
+    <script src="../common-assets/mobiscroll/js/mobiscroll.core.js"></script>
+    <script src="../common-assets/mobiscroll/js/mobiscroll.frame.js"></script>
+    <script src="../common-assets/mobiscroll/js/mobiscroll.scroller.js"></script>
+    <script src="../common-assets/mobiscroll/js/mobiscroll.util.datetime.js"></script>
+    <script src="../common-assets/mobiscroll/js/mobiscroll.datetimebase.js"></script>
+    <script src="../common-assets/mobiscroll/js/mobiscroll.datetime.js"></script>
+    <script src="../common-assets/mobiscroll/js/mobiscroll.select.js"></script>
+    <script src="../common-assets/mobiscroll/js/mobiscroll.listbase.js"></script>
+    <script src="../common-assets/mobiscroll/js/mobiscroll.image.js"></script>
+    <script src="../common-assets/mobiscroll/js/mobiscroll.treelist.js"></script>
+    <script src="../common-assets/mobiscroll/js/mobiscroll.android-holo-light.js"></script>
+    <script src="../common-assets/mobiscroll/js/mobiscroll.i18n.zh.js"></script>
+    <script src="js/jquery.base64.js" ></script>
+    <script src="js/getJson.js"></script>
+</head>
+<section class='wrapper'>
+    <section class="shopHead"><a href="my.html"><img src="images/top-back.png"> </a>个人资料</section>
+    <section class="personalMain">
+        <ul>
+            <li class="personalImg"><a ><span><img src=""> </span>头像</a></li>
+            <li class="personalName"><a ><span></span>昵称</a></li>
+            <li class="personalSex"><a ><span></span>性别</a></li>
+            <li class="personalBri"><span><input type="text" id="startDate" class="" value="" readonly=""></span>生日</li>
+        </ul>
+    </section>
+</section>
+<script>
+    $('#startDate').mobiscroll().date({
+        startYear:1900,
+        theme: "android-holo-light",     // Specify theme like: theme: 'ios' or omit setting to use default
+        mode: "scroller",       // Specify scroller mode like: mode: 'mixed' or omit setting to use default
+        display: "bottom", // Specify display mode like: display: 'bottom' or omit setting to use default
+        lang: "zh"       // Specify language like: lang: 'pl' or omit setting to use default
+    });
+</script>
+<script src="js/personal.js"></script>
+</body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>易订销</title>
+    <meta name="keywords" content="易订销"/>
+    <meta name="description" content="易订销"/>
+    <meta name="title" content="易订销"/>
+    <meta content="telephone=no,email=no,address=no" name="format-detection"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="blank"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,minimal-ui"/>
+
+    <!--开始css引入-->
+
+    <!--本页专用样式-->
+    <link rel="stylesheet" href="css/order_state.css"/>
+    <link rel="stylesheet" href="../common-assets/css/title_footer.css"/>
+
+    <!--结束css引入-->
+
+    <!--引入js文件开始-->
+    <script src="../common-assets/js/jquery-2.2.3.min.js"></script>
+    <script src="../common-assets/js/flexible.js"></script>
+    <script src="../common-assets/js/flexible_css.js"></script>
+    <!--引入js文件结束-->
+    <script src="js/jquery.base64.js" ></script>
+    <script src="js/getJson.js" ></script>
+</head>
+<body>
+<div class="main">
+    <!--头部开始-->
+    <div class="header">
+        <div class="left">
+            <a class="back" onclick="window.history.go(-1)">
+                <img src="images/zm-back.png">
+            </a>
+        </div>
+        <div class="title">
+            <h2>订单状态</h2>
+        </div>
+    </div>
+    <!--头部结束-->
+    <!--内容主体开始-->
+
+    <div class="firm_order">
+        <div class="tab-box tab">
+            <a>全部</a>
+            <a><input type="hidden" value="WAIT_BUYER_PAY" id="tab-box2">待支付</a>
+            <a><input type="hidden" value="WAIT_SELLER_SEND_GOODS" id="tab-box3">待发货</a>
+            <a><input type="hidden" value="WAIT_BUYER_CONFIRM_GOODS" id="tab-box4">待收货</a>
+        </div>
+        <div class="firm_No">
+        </div>
+        <div class="dianpu tab_box">
+            <div class="tab-box1"></div>
+            <div class="tab-box2"> </div>
+            <div class="tab-box3"></div>
+            <div class="tab-box4"></div>
+
+        </div>
+
+    </div>
+    <div class=""></div>
+    <!--内容主体结束-->
+
+    <!--弹出支付方式-->
+    <div class="am-share">
+        <div class="am-share-footer">
+            请选择支付方式
+            <div class="share_btn"><img src="images/chahao.png"/></div>
+
+        </div>
+        <div class="am-diecl">
+            <div class="shop-submitpay shopSubm">
+
+            </div>
+        </div>
+        <div class="shop_payPass"><input type="password" placeholder="请输入6位数支付密码" id="shop_payPass"> </div>
+        <button class="shop-btn shop-submin">确定</button>
+    </div>
+</div>
+<div class="action"></div>
+<div class="shop-carshade">
+    <div class="shop-carmodel">
+        <div class="model">
+            确认收货吗
+        </div>
+        <div class="model-btn clearfix">
+            <a class="model-btn-no" href="javascript:;">取消</a>
+            <a class="model-btn-yes" href="javascript:;">确认</a>
+        </div>
+    </div>
+</div>
+
+<style>
+    a:hover{
+        text-decoration: none;
+    }
+    span{
+        text-decoration: none;
+    }
+</style>
+
+<script src="js/ordersate.js" ></script>
+</body>
+</html>

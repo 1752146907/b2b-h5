@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>售后详情</title>
+    <meta name="keywords" content="经销商店铺"/>
+    <meta name="description" content="经销商店铺"/>
+    <meta name="title" content="经销商店铺"/>
+    <meta content="telephone=no,email=no,address=no" name="format-detection"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="blank"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,minimal-ui"/>
+    <!--开始css引入-->
+    <!--本页专用样式-->
+    <link rel="stylesheet" href="css/saleinformation.css"/>
+    <!--滑动插件样式-->
+    <link rel="stylesheet" href="../common-assets/css/swiper.css"/>
+    <!--结束css引入-->
+    <!--引入js文件开始-->
+    <script src="../common-assets/js/flexible.js"></script>
+    <script src="../common-assets/js/flexible_css.js"></script>
+    <!--开始引入滑动插件-->
+    <script src="../common-assets/js/swiper.min.js"></script>
+    <!--引入jq库文件-->
+    <script src="../common-assets/js/jquery-2.2.3.min.js"></script>
+    <!--引入全局效果配置文件-->
+    <!--引入js文件结束-->
+    <script src="js/jquery.base64.js" ></script>
+    <script src="js/getJson.js"></script>
+</head>
+<section class='wrapper'>
+  <section class="shopHead"><a  onclick="window.history.go(-1)"><img src="images/top-back.png"> </a>售后详情</section>
+  <section class="saleLoad">
+      <div class="saleTop">
+          <B>已完成</B>
+          <span>
+          <p class="sqsj">申请时间：<em></em></p>
+          <p>完成时间：2015-06-02 12:25:12</p>
+          </span>
+      </div>
+      <div class="saleBot">
+          <span></span>
+          <div class="saleText">
+              <a>提交申请</a>
+              <a>等待回寄</a>
+              <a>已回寄</a>
+              <a>完成</a>
+          </div>
+      </div>
+  </section>
+    <section class="saleMain">
+        <div class="saleInfo">
+            <ul>
+                <li>退货信息</li>
+                <li class="tid"><span>1234567890</span>订单号</li>
+                <li class="aftersales_bn"><span>1125484215</span>退货编号</li>
+                <li  class="aftersales_type"><span>退货退款</span>退货类型</li>
+                <li  class="item_price"><span>￥ 12.12</span>退款金额</li>
+                <!--<li><span><p>王大锤</p>13612312312</span>您的收货信息</li>-->
+            </ul>
+        </div>
+    </section>
+
+    <section class="saleMain">
+        <div class="saleQuality">
+            <ul>
+                <li class="reason"><span>质量有问题</span>退换货理由</li>
+                <li class="remark"><span>无详细描述</span>问题描述</li>
+                <li>图片信息
+                <div class="saleImg">
+                    <a><img src="images/shop.jpg"> </a>
+                    <a><img src="images/shop2.jpg"> </a>
+                    <a><img src="images/shop.jpg"> </a>
+                    <a><img src="images/shop2.jpg"> </a>
+                </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="saleMain">
+        <div class="saleMater">
+            <ul>
+                <li><span></span>商品回寄物流信息</li>
+                <li><span>顺丰快递</span>物流公司</li>
+                <li><span>897212132131</span>物流单号</li>
+                <li><span>18834567890</span>回寄人手机</li>
+                <li><span>武汉市洪山区总部国际</span>回寄地址</li>
+            </ul>
+        </div>
+        <div class="fill-infobtn"><a>回寄商品</a></div>
+    </section>
+</section>
+<script src="js/saleinformation.js"></script>
+</body>
+</html>

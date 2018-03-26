@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>商品详情</title>
+    <meta name="keywords" content="经销商店铺"/>
+    <meta name="description" content="经销商店铺"/>
+    <meta name="title" content="经销商店铺"/>
+    <meta content="telephone=no,email=no,address=no" name="format-detection"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="blank"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,minimal-ui"/>
+    <!--开始css引入-->
+    <!--本页专用样式-->
+    <link rel="stylesheet" href="css/shopinformation.css"/>
+    <!--滑动插件样式-->
+    <link rel="stylesheet" href="../common-assets/css/swiper.css"/>
+    <link rel="stylesheet" href="css/iosOverlay.css">
+    <!--结束css引入-->
+    <!--引入js文件开始-->
+    <script src="../common-assets/js/flexible.js"></script>
+    <script src="../common-assets/js/flexible_css.js"></script>
+    <!--开始引入滑动插件-->
+    <script src="../common-assets/js/swiper.min.js"></script>
+    <!--引入jq库文件-->
+    <script src="../common-assets/js/jquery-2.2.3.min.js"></script>
+    <!--引入全局效果配置文件-->
+    <!--引入js文件结束-->
+    <script src="js/jquery.base64.js" ></script>
+    <script src="js/getJson.js" ></script>
+</head>
+<section class='wrapper'>
+  <section class="shopHead"><a onclick="window.history.go(-1)"><img src="images/top-back.png"> </a>商品详情</section>
+  <section class="banner">
+      <div class="shopBanner">
+          <div class="swiper-container">
+              <div class="swiper-wrapper">
+
+                  </div>
+              <!-- Add Pagination -->
+              <div class="swiper-pagination pagination0" ></div>
+          </div>
+      </div>
+  </section>
+  <section class="shopMain">
+      <div class="shopName">
+          <h3></h3>
+          <p></p>
+          <div class="price"></div>
+      </div>
+      <!--<div class="shopSize">-->
+          <!--<b>已选</b>请选择商品规格-->
+      <!--</div>-->
+      <div class="shopPic">
+          <h3>图文详情</h3>
+          <div class="shopTp">
+              <!--<img src="images/picxq.jpg">-->
+          </div>
+      </div>
+  </section>
+
+    <!--弹出规格-->
+    <div class="am-share1">
+        <div class="am-share-footer"><div class="share_btn1"><img src="images/chahao.png"/></div></div>
+        <div class="am-share-sns box-s">
+            <div class="sdetail clearfloat">
+                <div class="top clearfloat">
+                    <div class="clearfloat">
+                        <div class="tu clearfloat fl">
+                            <img src=""/>
+                        </div>
+                        <div class="you clearfloat fl">
+                            <p class="tit" id="total">¥ /</p>
+                            <span>请选择商品规格</span>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- <div class="middle clearfloat">
+                    <p>尺码</p>
+                    <div class="xia clearfloat">
+                        <ul>
+                            <li class="ra3 cur">S</li>
+                            <li class="ra3">L</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="middle clearfloat">
+                    <p>主要颜色</p>
+                    <div class="xia clearfloat">
+                        <ul>
+                            <li class="ra3 cur">白色 短款</li>
+                            <li class="ra3">黑色 短款</li>
+                            <li class="ra3">黑色 短款</li>
+                            <li class="ra3">黑色 短款</li>
+                            <li class="ra3">黑色 短款</li>
+                        </ul>
+                    </div>
+                </div>  -->
+
+                <div class="bottom clearfloat">
+                    <p class="fl">购买数量</p>
+                    <div class="you clearfloat fr">
+                        <a class="min"><img src="images/min.png" /> </a>
+                         <input type="tel" value="1" class="text_box" id="Num">
+                        <a class="add"><img src="images/add.png" /></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a  class="shop-btn shop-post">确定</a>
+    </div>
+
+
+    <!--立即购买弹出规格-->
+    <div class="am-share">
+        <div class="am-share-footer"><div class="share_btn"><img src="images/chahao.png"/></div></div>
+        <div class="am-share-sns box-s">
+            <div class="sdetail clearfloat">
+                <div class="top clearfloat">
+                    <div class="clearfloat">
+                        <div class="tu clearfloat fl">
+                            <img src=""/>
+                        </div>
+                        <div class="you clearfloat fl">
+                            <p class="tit" id="total"></p>
+                            <span>请选择商品规格</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="middle clearfloat">
+                    <div class="middle clearfloat">
+                        <p>尺码</p>
+                        <div class="xia clearfloat">
+                            <ul>
+                                <li class="ra3 cur">S</li>
+                                <li class="ra3">L</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="middle clearfloat">
+                        <p>主要颜色</p>
+                        <div class="xia clearfloat">
+                            <ul>
+                                <li class="ra3 cur">白色 短款</li>
+                                <li class="ra3">黑色 短款</li>
+                                <li class="ra3">黑色 短款</li>
+                                <li class="ra3">黑色 短款</li>
+                                <li class="ra3">黑色 短款</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div> -->
+
+                <div class="bottom clearfloat">
+                    <p class="fl">购买数量</p>
+                    <div class="you clearfloat fr">
+                        <a class="min"><img src="images/min.png" /> </a>
+                        <input type="tel" value="1" class="text_box" id="vaNum">
+                        <a class="add"><img src="images/add.png" /></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a  class="shop-btn shopGo">去支付</a>
+    </div>
+
+    <section class="gmBtn">
+        <div class="gmBtnL">
+            <a class="cllect">收藏</a>
+            <a class="gmBjd">进店</a>
+            <a class="gmBwc">购物车<i>0</i></a>
+        </div>
+     <div class="gmBtnR">
+         <a  class="gmNow">立即购买</a>
+         <a class="gmAdd">加入购物车</a>
+     </div>
+    </section>
+    <section class="goTop">
+        <div class="goBack">
+            <img src="images/top.png">
+            顶部
+        </div>
+    </section>
+</section>
+
+ <!--<div class="animationTipBox">-->
+     <!--<h3>请登录</h3>-->
+ <!--</div>-->
+
+<input type="hidden" id="sku_id">
+<input type="hidden" id="item_id">
+
+<script src="js/shopinformation.js" ></script>
+<script src="js/iosOverlay.js"></script>
+
+</body>
+</html>

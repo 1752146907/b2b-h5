@@ -1,0 +1,361 @@
+@charset "UTF-8";
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Microsoft YaHei", "微软雅黑";
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font-family: "Microsoft YaHei", "微软雅黑";
+}
+
+.wrapper {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
+  background-color: #f3f3f3;
+}
+
+.shopHead {
+  height: 1.2rem;
+  line-height: 1.2rem;
+  text-align: center;
+  font-size: 0.48rem;
+  color: #444;
+  background-color: #fff;
+  margin-bottom: 0.266667rem;
+  position: relative;
+}
+
+.shopHead img {
+  width: 2.133333rem;
+  height: 0.506667rem;
+  left: 0.4rem;
+  top: 0.346667rem;
+  position: absolute;
+}
+
+.setMain {
+  background-color: #fff;
+}
+
+.setMain ul li {
+  height: 1.28rem;
+  line-height: 1.28rem;
+  border-bottom: 0.013333rem #eee solid;
+  color: #2c2c2c;
+  font-size: 0.373333rem;
+  padding: 0 0.4rem;
+}
+
+.setMain ul li span {
+  float: right;
+  color: #989898;
+  padding-right: 0.266667rem;
+  height: 1.28rem;
+}
+.setMain ul li a {
+    color: #333;
+    display: block;
+}
+.setMain ul li span img {
+  width: 1.12rem;
+  height: 1.12rem;
+  border-radius: 100%;
+  margin-top: 0.226667rem;
+}
+
+.setMain ul li span::after {
+  content: '';
+  float: right;
+  display: block;
+  background: url("../images/link.png") no-repeat center center;
+  width: 0.266667rem;
+  height: 1.28rem;
+  background-size: 0.133333rem 0.24rem;
+  margin-left: 0.133333rem;
+}
+
+.changeMain {
+  background-color: #fff;
+}
+
+.changeMain ul li {
+  height: 1.28rem;
+  line-height: 1.28rem;
+  border-bottom: 0.013333rem #eee solid;
+  color: #2c2c2c;
+  font-size: 0.373333rem;
+  padding: 0 0.4rem;
+}
+
+.changeMain ul li span {
+  float: left;
+  color: #989898;
+  padding-right: 0.266667rem;
+  height: 1.28rem;
+  width: 2.266667rem;
+}
+
+.changeMain ul li input {
+  color: #989898;
+  font-size: 0.373333rem;
+  border: none;
+  height: 1.266667rem;
+  line-height: 1.266667rem;
+  font-family: "微软雅黑";
+  width: 6rem;
+  float: left;
+}
+
+.cellMain {
+  background-color: #fff;
+}
+
+.cellMain ul li {
+  height: 1.28rem;
+  line-height: 1.28rem;
+  border-top: 0.013333rem #eee solid;
+  color: #2c2c2c;
+  font-size: 0.373333rem;
+  padding: 0 0.4rem;
+}
+
+.cellMain ul li span {
+  float: left;
+  color: #989898;
+  padding-right: 0.266667rem;
+  height: 1.28rem;
+  width: 2.266667rem;
+}
+
+.cellMain ul li input {
+  color: #989898;
+  font-size: 0.373333rem;
+  border: none;
+  height: 1.266667rem;
+  line-height: 1.266667rem;
+  font-family: "微软雅黑";
+  float: left;
+}
+
+.cellPho input {
+  width: 6rem;
+}
+
+.cellYzm input {
+  width: 3.333333rem;
+}
+
+.cellYzm a {
+  background-color: #ff4c01;
+    width: 2.533333rem;
+    height: 0.766667rem;
+    line-height: 0.766667rem;
+  color: #fff;
+  border-radius: 0.133333rem;
+  font-size: 0.32rem;
+  display: inline-block;
+  text-align: center;
+  float: right;
+  margin-top: 0.32rem;
+    text-decoration: none;
+}
+
+.payMain {
+  background-color: #fff;
+}
+
+.payMain p {
+  height: 0.533333rem;
+  line-height: 0.533333rem;
+  background-color: #f3f3f3;
+  color: #aaa;
+  padding: 0 0.4rem 0.266667rem;
+  font-size: 0.293333rem;
+}
+
+.payMain ul li {
+  height: 1.28rem;
+  line-height: 1.28rem;
+  border-bottom: 0.013333rem #eee solid;
+  color: #2c2c2c;
+  font-size: 0.373333rem;
+  padding: 0 0.4rem;
+}
+
+.payMain ul li span {
+  float: left;
+  color: #989898;
+  padding-right: 0.266667rem;
+  height: 1.28rem;
+  width: 2.266667rem;
+}
+
+.payMain ul li input {
+  color: #989898;
+  font-size: 0.373333rem;
+  border: none;
+  height: 1.266667rem;
+  line-height: 1.266667rem;
+  font-family: "微软雅黑";
+  float: left;
+}
+
+.payBot {
+  background-color: #fff;
+}
+
+.payBot p {
+  height: 0.533333rem;
+  line-height: 0.533333rem;
+  background-color: #f3f3f3;
+  color: #aaa;
+  padding: 0.266667rem 0.4rem;
+  font-size: 0.293333rem;
+}
+
+.payBot ul li {
+  height: 1.28rem;
+  line-height: 1.28rem;
+  border-top: 0.013333rem #eee solid;
+  color: #2c2c2c;
+  font-size: 0.373333rem;
+  padding: 0 0.4rem;
+}
+
+.payBot ul li span {
+  float: left;
+  color: #989898;
+  padding-right: 0.266667rem;
+  height: 1.28rem;
+  width: 2.266667rem;
+}
+
+.payBot ul li input {
+  color: #989898;
+  font-size: 0.373333rem;
+  border: none;
+  height: 1.266667rem;
+  line-height: 1.266667rem;
+  font-family: "微软雅黑";
+  float: left;
+  width: 3.333333rem;
+}
+
+.tcBtn {
+  background-color: #ff4c01;
+  height: 1.066667rem;
+  line-height: 1.066667rem;
+  position: absolute;
+  bottom: 0.266667rem;
+  width: 90%;
+  display: block;
+  color: #fff;
+  font-size: 0.426667rem;
+  left: 5%;
+  border-radius: 0.133333rem;
+  text-align: center;
+  letter-spacing: 0.066667rem;
+}
+
+.loginCode a {
+    width: 2.2rem;
+    height: 0.833333rem;
+    float: right;
+    margin-right: 10px;
+
+    margin-top: .23333rem;
+}
+.loginCode img {
+    width: 2.2rem;
+    height: 0.833333rem;
+
+}

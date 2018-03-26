@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>商品分类</title>
+    <meta name="keywords" content="经销商店铺"/>
+    <meta name="description" content="经销商店铺"/>
+    <meta name="title" content="经销商店铺"/>
+    <meta content="telephone=no,email=no,address=no" name="format-detection"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="blank"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,minimal-ui"/>
+    <!--开始css引入-->
+    <!--本页专用样式-->
+    <link rel="stylesheet" href="css/list.css"/>
+    <!--结束css引入-->
+    <!--引入js文件开始-->
+    <script src="../common-assets/js/flexible.js"></script>
+    <script src="../common-assets/js/flexible_css.js"></script>
+    <!--引入jq库文件-->
+    <script src="../common-assets/js/jquery-2.2.3.min.js"></script>
+    <script src="js/jquery.base64.js"></script>
+    <script src="js/getJson.js" ></script>
+    <!--引入全局效果配置文件-->
+</head>
+<section class='wrapper'>
+    <section class="shopHead">
+        <span class="listFl">分类</span>
+        <a  onclick="window.history.go(-1)">
+            <img src="images/logo-back.png">
+        </a>
+        <span class="current-cat-name">易订销</span>
+    </section>
+    <section class="ListMain">
+        <div class="listShop">
+            <ul>
+            </ul>
+        </div>
+    </section>
+    <!-- 侧边导航 -->
+    <div class="slide-mask"></div>
+    <aside class="slide-wrapper">
+        <div class="slideNav">
+            <div>
+                <strong>全部分类</strong>
+            </div>
+            <ul>
+
+            </ul>
+        </div>
+    </aside>
+</section>
+<script src="js/list.js" ></script>
+</body>
+</html>

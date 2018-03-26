@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>易订销</title>
+    <meta name="keywords" content="易订销"/>
+    <meta name="description" content="易订销"/>
+    <meta name="title" content="易订销"/>
+    <meta content="telephone=no,email=no,address=no" name="format-detection"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="blank"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,minimal-ui"/>
+
+    <!--开始css引入-->
+
+    <!--本页专用样式-->
+    <link rel="stylesheet" href="css/order_payed.css"/>
+    <link rel="stylesheet" href="../common-assets/css/title_footer.css"/>
+
+    <!--结束css引入-->
+
+    <!--引入js文件开始-->
+    <script src="../common-assets/js/jquery-2.2.3.min.js"></script>
+    <script src="../common-assets/js/flexible.js"></script>
+    <script src="../common-assets/js/flexible_css.js"></script>
+    <!--引入js文件结束-->
+    <script src="js/jquery.base64.js" ></script>
+    <script src="js/getJson.js"></script>
+</head>
+<body>
+<div class="main">
+    <!--头部开始-->
+    <div class="header">
+        <div class="left">
+            <a class="back" onclick="window.history.go(-1)">
+                <img src="images/zm-back.png">
+            </a>
+        </div>
+        <div class="title">
+            <h2>订单状态</h2>
+        </div>
+    </div>
+    <!--头部结束-->
+    <!--内容主体开始-->
+    <div class="firm_order">
+        <div class="success sureSuccess">
+            <img src="images/zm-pay.png">
+              <p>订单支付成功</p>
+            <span>请等待商家发货</span>
+        </div>
+        <div class="success sureWrong">
+            <img src="images/wr-pay.png">
+            <p>订单支付失败</p>
+            <!--<span>请等待商家发货</span>-->
+        </div>
+        <div class="btn-box">
+            <!-- <a class="btn-ck" >查看订单</a> -->
+            <a class="btn-gk" >继续购物</a>
+        </div>
+    </div>
+    <div class=""></div>
+    <!--内容主体结束-->
+</div>
+<script src="js/orderpayed.js" ></script>
+<style>
+    a:hover{
+        text-decoration: none;
+    }
+    span{
+        text-decoration: none;
+    }
+    .btn-box a{
+        float: none !important;
+        padding: 10px 22px;
+    }
+</style>
+</body>
+</html>

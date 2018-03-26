@@ -1,0 +1,191 @@
+body,
+html {
+  background-color: #f3f3f3;
+  height: 100%;
+}
+
+.header {
+  z-index: 10;
+  position: relative;
+}
+
+.header .shop-search {
+  width: 7.573333rem;
+  height: 0.746667rem;
+  line-height: 0.746667rem;
+  border-radius: 0.08rem;
+  margin: 0 auto;
+  padding-top: 0.266667rem;
+}
+
+.header .shop-search input {
+  background-color: #eee;
+  border: none;
+  border-radius: 0.08rem;
+  width: 7.573333rem;
+  height: 0.746667rem;
+  text-indent: 0.346667rem;
+  font-size: 0.373333rem;
+}
+
+.header .searchbtn {
+  color: #808080;
+  font-size: 0.373333rem;
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 1.2rem;
+  line-height: 1.2rem;
+  width: 1.2rem;
+  text-align: center;
+}
+
+.search-history {
+  border-bottom: 0.026667rem solid #e9e9e9;
+  background-color: #f3f3f3;
+  font-size: 0.373333rem;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  box-sizing: border-box;
+  padding-top: 1.2rem;
+  top:0;
+}
+
+.search-history .search-historyhd {
+  border-bottom: 0.026667rem solid #e9e9e9;
+  height: 1.28rem;
+  line-height: 1.28rem;
+  color: #222;
+  text-indent: 0.4rem;
+  background-color: #fff;
+}
+
+.search-history .search-historyli {
+  padding-left: 0.4rem;
+  background-color: #fff;
+}
+
+.search-history .search-historyli li {
+  border-bottom: 0.026667rem solid #e9e9e9;
+}
+
+.search-history .search-historyli li a {
+  display: block;
+  color: #222;
+  height: 1.28rem;
+  line-height: 1.28rem;
+}
+
+.search-history .search-historyli li:last-child {
+  border-bottom: none;
+}
+
+.search-list {
+  display: none;
+}
+.search-list ul {
+  padding-top: 0.266667rem;
+}
+
+.search-list li {
+  background-color: #fff;
+  border-bottom: 0.026667rem solid #eee;
+  border-top: 0.026667rem solid #eee;
+  margin-bottom: 0.266667rem;
+  padding: 0.32rem 0.4rem;
+}
+
+.shop-carimg {
+  float: left;
+}
+
+.shop-carimg img {
+  width: 2.24rem;
+  height: 2.24rem;
+  vertical-align: top;
+}
+
+.shop-carinfo {
+  float: left;
+  padding-left: 0.4rem;
+  width: 6.533333rem;
+}
+
+.shop-carinfo .shop-cartitle {
+  font-size: 0.373333rem;
+  color: #444;
+  height: 0.753333rem;
+  overflow: hidden;
+  line-height: 0.753333rem;
+}
+
+.shop-carinfo p {
+  font-size: 0.32rem;
+  color: #aaa;
+  height: 0.8rem;
+  line-height: 0.8rem;
+}
+
+.shop-carinfo .shop-carprice .shop-carnum {
+  font-size: 0.48rem;
+  color: #ff4c01;
+  float: left;
+}
+
+.shop-carinfo .shop-carprice .shop-caredit {
+  float: right;
+  border: 0.026667rem solid #ddd;
+  border-radius: 0.053333rem;
+  width: 2.186667rem;
+  height: 0.586667rem;
+  line-height: 0.586667rem;
+}
+
+.shop-carinfo .shop-carprice .shop-caredit span {
+  border-left: 0.026667rem solid #ddd;
+  border-right: 0.026667rem solid #ddd;
+  height: 0.586667rem;
+  float: left;
+  width: 0.773333rem;
+  text-align: center;
+  color: #aaa;
+  font-size: 0.346667rem;
+}
+
+.shop-carinfo .shop-carprice .shop-caredit a {
+  float: left;
+  text-align: center;
+  width: 0.68rem;
+  color: #ddd;
+  line-height: 0.56rem;
+}
+
+.shop-carinfo .shop-carprice .shop-caredit .shop-carminus {
+  font-size: 0.266667rem;
+}
+
+.shop-carinfo .shop-carprice .shop-caredit .shop-caradd {
+  font-size: 0.426667rem;
+}
+
+.search-no {
+  position: absolute;
+  z-index: 5;
+  height:100%;
+  text-align: center;
+  width: 100%;
+  line-height: 100%;
+  top:0;
+  box-sizing: border-box;
+  padding-top: 50%;
+  display: none;
+}
+.search-no img {
+  width: 3.68rem;
+  height:3.6rem;
+}
+.search-no p {
+  padding-top: 0.5rem;
+  font-size: 0.373333rem;
+}

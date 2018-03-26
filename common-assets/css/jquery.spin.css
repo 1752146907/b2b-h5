@@ -1,0 +1,162 @@
+/* jQuery Modal
+ * Copyright 2014 Kevin Sylvestre
+ * 1.1.6
+ */
+
+@-webkit-keyframes spin {
+  0% {
+    opacity: .2;
+  }
+  100% {
+    opacity: .4;
+  }
+}
+
+@-o-keyframes spin {
+  0% {
+    opacity: .2;
+  }
+  100% {
+    opacity: .4;
+  }
+}
+
+@keyframes spin {
+  0% {
+    opacity: .2;
+  }
+  100% {
+    opacity: .4;
+  }
+}
+
+.spin {
+  position: relative;
+  display: inline-block;
+  width: 1.706667rem;
+  height: 1.706667rem;
+  margin: 0.213333rem;
+}
+
+.spin.spin-gleam {
+  background: #444;
+  border-radius: 0.213333rem;
+}
+
+.spin.spin-gleam > * {
+  background: #eee;
+}
+
+.spin.spin-dusky {
+  background: #eee;
+  border-radius: 0.213333rem;
+}
+
+.spin.spin-dusky > * {
+  background: #444;
+}
+
+.spin > * {
+  position: absolute;
+  top: 38%;
+  left: 46%;
+  width: 8%;
+  height: 24%;
+  background: black;
+  border-radius: 1.706667rem;
+  box-shadow: 0 0 0.026667rem rgba(0, 0, 0, .4);
+  opacity: .2;
+  -webkit-animation: spin .8s linear infinite;
+  -o-animation: spin .8s linear infinite;
+  animation: spin .8s linear infinite;
+}
+
+.spin > *:nth-child(1) {
+  -webkit-transform: rotate(40deg) translate(0, -120%);
+  -ms-transform: rotate(40deg) translate(0, -120%);
+  -o-transform: rotate(40deg) translate(0, -120%);
+  transform: rotate(40deg) translate(0, -120%);
+  -webkit-animation-delay: .08889s;
+  -o-animation-delay: .08889s;
+  animation-delay: .08889s;
+}
+
+.spin > *:nth-child(2) {
+  -webkit-transform: rotate(80deg) translate(0, -120%);
+  -ms-transform: rotate(80deg) translate(0, -120%);
+  -o-transform: rotate(80deg) translate(0, -120%);
+  transform: rotate(80deg) translate(0, -120%);
+  -webkit-animation-delay: .17778s;
+  -o-animation-delay: .17778s;
+  animation-delay: .17778s;
+}
+
+.spin > *:nth-child(3) {
+  -webkit-transform: rotate(120deg) translate(0, -120%);
+  -ms-transform: rotate(120deg) translate(0, -120%);
+  -o-transform: rotate(120deg) translate(0, -120%);
+  transform: rotate(120deg) translate(0, -120%);
+  -webkit-animation-delay: .26667s;
+  -o-animation-delay: .26667s;
+  animation-delay: .26667s;
+}
+
+.spin > *:nth-child(4) {
+  -webkit-transform: rotate(160deg) translate(0, -120%);
+  -ms-transform: rotate(160deg) translate(0, -120%);
+  -o-transform: rotate(160deg) translate(0, -120%);
+  transform: rotate(160deg) translate(0, -120%);
+  -webkit-animation-delay: .35556s;
+  -o-animation-delay: .35556s;
+  animation-delay: .35556s;
+}
+
+.spin > *:nth-child(5) {
+  -webkit-transform: rotate(200deg) translate(0, -120%);
+  -ms-transform: rotate(200deg) translate(0, -120%);
+  -o-transform: rotate(200deg) translate(0, -120%);
+  transform: rotate(200deg) translate(0, -120%);
+  -webkit-animation-delay: .44444s;
+  -o-animation-delay: .44444s;
+  animation-delay: .44444s;
+}
+
+.spin > *:nth-child(6) {
+  -webkit-transform: rotate(240deg) translate(0, -120%);
+  -ms-transform: rotate(240deg) translate(0, -120%);
+  -o-transform: rotate(240deg) translate(0, -120%);
+  transform: rotate(240deg) translate(0, -120%);
+  -webkit-animation-delay: .53333s;
+  -o-animation-delay: .53333s;
+  animation-delay: .53333s;
+}
+
+.spin > *:nth-child(7) {
+  -webkit-transform: rotate(280deg) translate(0, -120%);
+  -ms-transform: rotate(280deg) translate(0, -120%);
+  -o-transform: rotate(280deg) translate(0, -120%);
+  transform: rotate(280deg) translate(0, -120%);
+  -webkit-animation-delay: .62222s;
+  -o-animation-delay: .62222s;
+  animation-delay: .62222s;
+}
+
+.spin > *:nth-child(8) {
+  -webkit-transform: rotate(320deg) translate(0, -120%);
+  -ms-transform: rotate(320deg) translate(0, -120%);
+  -o-transform: rotate(320deg) translate(0, -120%);
+  transform: rotate(320deg) translate(0, -120%);
+  -webkit-animation-delay: .71111s;
+  -o-animation-delay: .71111s;
+  animation-delay: .71111s;
+}
+
+.spin > *:nth-child(9) {
+  -webkit-transform: rotate(360deg) translate(0, -120%);
+  -ms-transform: rotate(360deg) translate(0, -120%);
+  -o-transform: rotate(360deg) translate(0, -120%);
+  transform: rotate(360deg) translate(0, -120%);
+  -webkit-animation-delay: .8s;
+  -o-animation-delay: .8s;
+  animation-delay: .8s;
+}

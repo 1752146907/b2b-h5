@@ -1,0 +1,413 @@
+body,
+html {
+  background-color: #f3f3f3;
+}
+
+.shop-carcheck {
+  position: relative;
+  float: left;
+}
+
+.shop-carcheck input {
+  position: absolute;
+  width: 0;
+  height: 0;
+  opacity: 0;
+}
+
+.shop-carcheck span {
+  width: 0.533333rem;
+  height: 0.533333rem;
+  display: block;
+  padding-left: 0.413333rem;
+  padding-right: 0.266667rem;
+  height: 1.186667rem;
+  background: url("../images/shop-carcheck.png") no-repeat 0.413333rem center;
+  background-size: 0.533333rem;
+}
+
+.shop-carcheck input:checked + span {
+  background: url("../images/shop-carchecked.png") no-repeat 0.413333rem center;
+  background-size: 0.533333rem;
+}
+
+.shop-car {
+  padding-bottom: 3rem;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  background-color: #f3f3f3;
+  overflow-y: auto;
+  box-sizing: border-box;
+}
+
+.shop-car .shop-carlist li {
+  margin-top: 0.266667rem;
+  background-color: #fff;
+}
+
+.shop-car .shop-carlist li .shop-carhead {
+  height: 1.186667rem;
+  line-height: 1.2rem;
+}
+
+.shop-car .shop-carlist li .shop-carhead a {
+  font-size: 0.346667rem;
+  color: #444;
+  display: inline-block;
+  padding-right: 0.346667rem;
+  background: url("../../common-assets/img/link.png") no-repeat right 54%;
+  background-size: 0.133333rem;
+}
+
+.shop-car .shop-carlist li .shop-carli {
+  border-top: 0.026667rem solid #eee;
+  padding-top: 0.346667rem;
+  padding-bottom: 0.4rem;
+}
+
+.shop-car .shop-carlist li .shop-carli label {
+  height: 2.24rem;
+}
+
+.shop-car .shop-carlist li .shop-carli label span {
+  height: 2.24rem;
+}
+
+.shop-car .shop-carlist li .shop-carli .shop-carimg {
+  float: left;
+}
+
+.shop-car .shop-carlist li .shop-carli .shop-carimg img {
+  width: 2.24rem;
+  height: 2.24rem;
+}
+
+.shop-car .shop-carlist li .shop-carli .shop-carinfo {
+  float: left;
+  padding-left: 0.4rem;
+  width: 5.68rem;
+}
+
+.shop-car .shop-carlist li .shop-carli .shop-carinfo .shop-cartitle {
+  font-size: 0.373333rem;
+  color: #444;
+  height: 0.853333rem;
+  overflow: hidden;
+  line-height: 0.453333rem;
+}
+
+.shop-car .shop-carlist li .shop-carli .shop-carinfo p {
+  font-size: 0.32rem;
+  color: #aaa;
+  height: 0.8rem;
+  line-height: 0.8rem;
+}
+
+.shop-car .shop-carlist li .shop-carli .shop-carinfo .shop-carprice .shop-carnum {
+  font-size: 0.48rem;
+  color: #ff4c01;
+  float: left;
+}
+
+.shop-car .shop-carlist li .shop-carli .shop-carinfo .shop-carprice .shop-caredit {
+  float: right;
+  border: 0.026667rem solid #ddd;
+  border-radius: 0.053333rem;
+  width: 2.186667rem;
+  height: 0.586667rem;
+  line-height: 0.586667rem;
+}
+
+.shop-car .shop-carlist li .shop-carli .shop-carinfo .shop-carprice .shop-caredit input {
+  border:0;
+  border-left: 0.026667rem solid #ddd;
+  border-right: 0.026667rem solid #ddd;
+  height: 0.586667rem;
+  float: left;
+  width: 0.673333rem;
+  text-align: center;
+  color: #aaa;
+  font-size: 0.346667rem;
+}
+
+.shop-car .shop-carlist li .shop-carli .shop-carinfo .shop-carprice .shop-caredit a {
+  float: left;
+  text-align: center;
+  width: 0.68rem;
+  color: #ddd;
+  line-height: 0.56rem;
+}
+
+.shop-car .shop-carlist li .shop-carli .shop-carinfo .shop-carprice .shop-caredit .shop-carminus {
+  font-size: 0.266667rem;
+}
+
+.shop-car .shop-carlist li .shop-carli .shop-carinfo .shop-carprice .shop-caredit .shop-caradd {
+  font-size: 0.426667rem;
+}
+
+.shop-cartotal {
+  position: fixed;
+  bottom: 1.3rem;
+  background-color: #fff;
+  border-bottom: 0.026667rem solid #c7c7c7;
+  width: 100%;
+  border-top: 0.026667rem solid #c7c7c7;
+}
+
+.shop-cartotal .shop-carcheck {
+  height: 1.28rem;
+}
+
+.shop-cartotal .shop-carcheck span {
+  height: 1.28rem;
+}
+
+.shop-cartotal .shop-cartotalinfo {
+  font-size: 0.373333rem;
+  color: #444;
+  float: left;
+  height: 1.28rem;
+  line-height: 1.28rem;
+}
+
+.shop-cartotal .shop-cartotalinfo i {
+  font-size: 0.48rem;
+  padding-left: 0.266667rem;
+  color: #ff4c01;
+  font-style: normal;
+  vertical-align: -0.053333rem;
+}
+.shop-cartotal .shop-cartotalinfo .shop-cartom {
+  padding-left:0;
+  vertical-align: -0.013333rem;
+}
+
+.shop-cartotal .shop-cartotalinfo span {
+  font-size: 0.32rem;
+  color: #9b9b9b;
+}
+
+.shop-cartotal .shop-carbtn {
+  float: right;
+  width: 2.453333rem;
+  text-align: center;
+  line-height: 1.28rem;
+  border: none;
+  background-color: #ff4c01;
+  color: #fff;
+  font-size: 0.48rem;
+}
+
+.shop-cartotal .shop-del {
+  float: right;
+  width: 2.453333rem;
+  text-align: center;
+  line-height: 1.28rem;
+  border: none;
+  background-color: #ff4c01;
+  color: #fff;
+  font-size: 0.48rem;
+  display: none;
+}
+
+.shop-carshade {
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  z-index: 12;
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+
+.shop-carshade .shop-carmodel {
+  width: 7.2rem;
+  height: 2.986667rem;
+  background-color: #fff;
+  border-radius: 0.266667rem;
+  position: absolute;
+  left: 50%;
+  margin-left: -3.6rem;
+  top: 50%;
+  margin-top: -1.493333rem;
+}
+
+.shop-carshade .shop-carmodel .model {
+  height: 1.8rem;
+  line-height: 1.8rem;
+  text-align: center;
+  font-size: 0.453333rem;
+}
+
+.shop-carshade .shop-carmodel .model-btn {
+  border-top: 0.026667rem solid #e1e1e1;
+}
+
+.shop-carshade .shop-carmodel .model-btn a {
+  font-size: 0.453333rem;
+  color: #0033b1;
+  float: left;
+  width: 50%;
+  box-sizing: border-box;
+  height: 1.146667rem;
+  line-height: 1.146667rem;
+  text-align: center;
+}
+
+.shop-carshade .shop-carmodel .model-btn .model-btn-no {
+  border-right: 0.026667rem solid #e1e1e1;
+}
+.shop-carno {
+  display: none;
+}
+.shop-carno .shop-carnohint {
+  padding-left: 0.32rem;
+  padding-right: 0.533333rem;
+  box-sizing: border-box;
+  height: 1.333333rem;
+  border-bottom: 0.026667rem solid #d1d1d1;
+  background-color: #fff;
+  position: absolute;
+  top: 1.2rem;
+  width: 100%;
+}
+
+.shop-carno .shop-carnohint span {
+  float: left;
+  font-size: 0.346667rem;
+  color: #2c2c2c;
+  padding-top: 0.24rem;
+}
+
+.shop-carno .shop-carnohint a {
+  float: right;
+  width: 1.253333rem;
+  height: 0.586667rem;
+  margin-top: 0.333333rem;
+  line-height: 0.586667rem;
+  text-align: center;
+  color: #fff;
+  background-color: #ee3322;
+}
+
+.shop-carno .shop-carnowrap {
+  position: absolute;
+  top: 30%;
+  width: 100%;
+  text-align: center;
+}
+
+.shop-carno .shop-carnowrap span {
+  display: block;
+  width: 2.906667rem;
+  height: 2.906667rem;
+  background-color: #e5e5e5;
+  border-radius: 100%;
+  margin: 0 auto;
+}
+
+.shop-carno .shop-carnowrap span img {
+  margin-top: 0.8rem;
+  width: 1.44rem;
+  height: 1.306667rem;
+}
+
+.shop-carno .shop-carnowrap p {
+  height: 1.706667rem;
+  line-height: 1.706667rem;
+  font-size: 0.373333rem;
+  color: #9b9b9b;
+}
+
+.shop-carno .shop-carnowrap a {
+  width: 4.533333rem;
+  height: 1.066667rem;
+  line-height: 1.066667rem;
+  color: #fff;
+  background-color: #ee3322;
+  font-size: 0.426667rem;
+  display: inline-block;
+  border-radius: 0.053333rem;
+}
+
+
+
+
+.bot {
+    height: 1.066667rem;
+    width: 90%;
+    position: fixed;
+    bottom: 0;
+    background-color: white;
+    padding: 0.24rem  5% 0;
+}
+
+.bot ul li {
+    width: 33%;
+    float: left;
+    text-align: center;
+    font-size: 0.266667rem;
+    position: relative;
+}
+
+.bot ul li em {
+    position: absolute;
+    background-color: red;
+    top: -0.053333rem;
+    right: 0.666667rem;
+    width: 0.666667rem;
+    height: 0.666667rem;
+    line-height: 0.666667rem;
+    border-radius: 100%;
+    color: #fff;
+    font-style: normal;
+    text-align: center;
+    font-size: 0.133333rem;
+}
+
+.bot ul li a {
+    color: #444;
+}
+
+.bot ul li .ico {
+    width: 0.586667rem;
+    height: 0.533333rem;
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.bot ul li .ico1 {
+    background: url("../images/home.png") no-repeat center center;
+    background-size: 0.56rem 0.506667rem;
+}
+
+.bot ul li .ico2 {
+    background: url("../images/gwc.png") no-repeat center center;
+    background-size: 0.586667rem 0.533333rem;
+}
+
+.bot ul li .ico3 {
+    background: url("../images/my.png") no-repeat center center;
+    background-size: 0.493333rem 0.506667rem;
+}
+
+.bot .botOn .ico1 {
+    background: url("../images/home1.png") no-repeat center center;
+    background-size: 0.56rem 0.506667rem;
+}
+
+.bot .botOn .ico2 {
+    background: url("../images/gwc1.png") no-repeat center center;
+    background-size: 0.586667rem 0.533333rem;
+}
+
+.bot .botOn .ico3 {
+    background: url("../images/my1.png") no-repeat center center;
+    background-size: 0.493333rem 0.506667rem;
+}
+
+.bot .botOn a {
+    color: #ff5711;
+}

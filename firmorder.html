@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>易订销</title>
+    <meta name="keywords" content="易订销"/>
+    <meta name="description" content="易订销"/>
+    <meta name="title" content="易订销"/>
+    <meta content="telephone=no,email=no,address=no" name="format-detection"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="blank"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,minimal-ui"/>
+
+    <!--开始css引入-->
+
+    <!--本页专用样式-->
+    <link rel="stylesheet" href="css/firm_order.css"/>
+    <link rel="stylesheet" href="../common-assets/css/title_footer.css"/>
+
+    <!--结束css引入-->
+
+    <!--引入js文件开始-->
+    <script src="../common-assets/js/jquery-2.2.3.min.js"></script>
+    <script src="../common-assets/js/flexible.js"></script>
+    <script src="../common-assets/js/flexible_css.js"></script>
+    <!--引入js文件结束-->
+    <script src="js/jquery.base64.js" ></script>
+    <script src="js/getJson.js"></script>
+</head>
+<body>
+<div class="main area_active">
+    <!--头部开始-->
+    <div class="header">
+        <div class="left">
+            <a class="back" onclick="window.history.go(-1)">
+                <img src="images/zm-back.png">
+            </a>
+        </div>
+        <div class="title">
+            <h2>订单详情</h2>
+        </div>
+    </div>
+    <!--头部结束-->
+    <!--内容主体开始-->
+    <div class="firm_order">
+        <div class="order_hao">
+            <p class="order_hd">订单号：<em></em></p>
+            <p class="order_time">下单时间：<em></em></p>
+            <a>待发货</a>
+        </div>
+        <div class="address">
+            <div class="wen"></div>
+            <div class="address_img">
+                <img src="images/zm-address.png">
+            </div>
+            <div class="address_content">
+                <div>
+                    <h2></h2>
+                    <h3></h3>
+                </div>
+                <div>
+                    <h4></h4>
+                </div>
+            </div>
+            <div class="address_enter">
+                <img src="images/arrow-gray.png">
+            </div>
+        </div>
+        <div class="require">
+           <a><h2>物流信息</h2>
+            <img src="images/arrow-gray.png">
+           </a>
+        </div>
+        <div class="dianpu-pic">
+            <dl>
+                <dt>店铺名称</dt>
+                <dd><img src="images/zm-b-back.png"></dd>
+            </dl>
+            <ul>
+
+            </ul>
+        </div>
+        <div class="info">
+            <dl class="infoType">
+                <dt>配送方式</dt>
+                <dd>快递配送</dd>
+            </dl>
+            <dl class="infoIvn">
+                <dt>发票信息</dt>
+                <dd>个人发票</dd>
+            </dl>
+        </div>
+        <div class="payment">
+            <dl>
+                <dt>支付方式</dt>
+                <dd>支付宝支付</dd>
+            </dl>
+            <dl class="pay-info total_fee">
+                <dt>商品金额</dt>
+                <dd>￥128.00</dd>
+            </dl>
+            <dl class="pay-info post_fee">
+                <dt>运费</dt>
+                <dd>-￥10.00</dd>
+            </dl>
+        </div>
+        <div class="order-tip">
+            <dl>
+                <dt>买家留言</dt>
+                <dd></dd>
+            </dl>
+        </div>
+    </div>
+    <!--内容主体结束-->
+    <!--底部开始-->
+    <div class="footer footBot">
+        <div class="total">
+            <h2>应付金额:<span>¥</span><span class="price_num">1224</span></h2>
+        </div>
+        <div class="pay payZf">
+            确认支付
+        </div>
+        <div class="pay cancel">
+            取消
+        </div>
+    </div>
+    <!--底部结束-->
+
+    <!--底部开始-->
+    <div class="footer footBt">
+        <div class="total">
+
+        </div>
+        <div class="pay paywl">
+            待收货
+        </div>
+        <div class="pay cancel">
+            取消
+        </div>
+    </div>
+    <!--底部结束-->
+
+    <!--弹出支付方式-->
+    <div class="am-share">
+        <div class="am-share-footer">
+            请选择支付方式
+            <div class="share_btn"><img src="images/chahao.png"/></div>
+
+        </div>
+        <div class="am-diecl">
+            <div class="shop-submitpay shopSubm">
+
+            </div>
+        </div>
+        <!--<div class="shop_payPass"><input type="password" placeholder="请输入6位数支付密码" id="shop_payPass"> </div>-->
+        <button class="shop-btn shop-submin">确定</button>
+    </div>
+
+</div>
+<div class="action"></div>
+<input type="hidden" id="payment_bn">
+<div class="shop-carshade">
+    <div class="shop-carmodel">
+        <div class="model">
+            确认收货吗
+        </div>
+        <div class="model-btn clearfix">
+            <a class="model-btn-no" href="javascript:;">取消</a>
+            <a class="model-btn-yes" href="javascript:;">确认</a>
+        </div>
+    </div>
+</div>
+<script src="js/firmorder.js"></script>
+<style>
+    a:hover{
+        text-decoration: none;
+    }
+    span{
+        text-decoration: none;
+    }
+    .footer-bar{
+        box-shadow: none;
+        border-top:solid 1px #f0f0f0;/*px*/
+    }
+</style>
+</body>
+</html>

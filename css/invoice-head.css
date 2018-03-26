@@ -1,0 +1,142 @@
+body {
+  background-color: #f3f3f3;
+}
+
+.invoice {
+  padding-top: 0.266667rem;
+}
+
+.invoice .invoice-radio {
+  background-color: #fff;
+}
+
+.invoice .invoice-radio .invoice-radiohd {
+  height: 1.133333rem;
+  line-height: 1.133333rem;
+  font-size: 0.373333rem;
+  color: #2c2c2c;
+  background: url("../images/invoice-radiohd.png") no-repeat 0.346667rem center;
+  background-size: 0.586667rem;
+  padding-left: 1.333333rem;
+}
+
+.invoice .invoice-radio .invoice-radiolist {
+  padding-left: 0.386667rem;
+  padding-bottom: 0.306667rem;
+}
+
+.invoice .invoice-radio .invoice-radiolist label {
+  width: 2.133333rem;
+  height: 0.693333rem;
+  line-height: 0.693333rem;
+  text-align: center;
+  font-size: 0.32rem;
+  color: #444;
+  float: left;
+  margin-right: 0.253333rem;
+  position: relative;
+}
+
+.invoice .invoice-radio .invoice-radiolist label span {
+  width: 100%;
+  line-height: 0.64rem;
+  display: block;
+  border: 0.026667rem solid #757575;
+  border-radius: 0.106667rem;
+}
+
+.invoice .invoice-radio .invoice-radiolist label input {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.invoice .invoice-radio .invoice-radiolist label input:checked + span {
+  border-color: #ff4c01;
+  color: #fff;
+  background-color: #ff4c01;
+}
+
+.invoice .invoice-input {
+  padding-top: 0.266667rem;
+  display: none;
+}
+
+.invoice .invoice-input li {
+  height: 1.293333rem;
+  line-height: 1.293333rem;
+  border-bottom: 0.026667rem solid #eee;
+  background-color: #fff;
+  font-size: 0.373333rem;
+  color: #444;
+}
+
+.invoice .invoice-input li label {
+  float: left;
+  width: 3.013333rem;
+  text-align: right;
+}
+
+.invoice .invoice-input li input {
+  border: none;
+  height: 1.193333rem;
+  width: 6.666667rem;
+}
+
+.invoice .invoice-input li:last-child {
+  border-bottom: none;
+}
+
+.invoice .invoice-btn {
+  background-color: #ff4c01;
+  width: 100%;
+  border: none;
+  text-align: center;
+  height: 1.173333rem;
+  line-height: 1.173333rem;
+  color: #fff;
+  font-size: 0.48rem;
+  position: absolute;
+  bottom: 0;
+}
+
+.invoice-head .invoice-radio .invoice-radiolist {
+  padding-bottom: 0.133333rem;
+}
+
+.invoice-head .invoice-radiohead {
+  border-bottom: 0.026667rem solid #e4e4e4;
+}
+
+.invoice-head .invoice-radiohead .invoice-radiohd {
+  background: url("../images/invoice-head.png") no-repeat 0.346667rem center;
+  background-size: 0.76rem;
+}
+
+.invoice-head .invoice-radiohead .invoice-radiolist {
+  padding-bottom: 0.36rem;
+}
+
+.invoice-head .invoice-hint {
+  font-size: 0.266667rem;
+  text-align: center;
+  color: #aaa;
+  height: 0.746667rem;
+  line-height: 0.746667rem;
+}
+
+.invoice-head .invoice-companyhide {
+  padding: 0 0.4rem 0.36rem;
+  display: none;
+}
+
+.invoice-head .invoice-companyhide input {
+  border: 0.026667rem solid #989898;
+  height: 1.146667rem;
+  border-radius: 0.08rem;
+  width: 100%;
+  padding: 0 0.186667rem;
+  box-sizing: border-box;
+  font-size: 0.373333rem;
+}

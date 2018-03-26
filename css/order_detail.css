@@ -1,0 +1,267 @@
+@charset "UTF-8";
+
+/*@import 'mixin';*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  font-family: 'Microsoft YaHei', '微软雅黑';
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  border: 0;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  background: #f4f4f4;
+}
+
+.main {
+  width: 100%;
+  margin: 0 auto;
+  background: #f7f7f7;
+}
+
+[data-dpr="1"] .main {
+  max-width: 540px;
+}
+
+[data-dpr="2"] .main {
+  max-width: 1080px;
+}
+
+[data-dpr="3"] .main {
+  max-width: 1620px;
+}
+
+.firm_order {
+  overflow: hidden;
+  margin: 0 auto;
+  background: #f4f4f4;
+}
+
+.firm_order .wuliu-info {
+  padding: 0.133333rem 0;
+  background: #fff;
+}
+
+.firm_order .wuliu-info dl {
+  margin: 0.186667rem 0.4rem;
+  overflow: hidden;
+}
+
+.firm_order .wuliu-info dl dt {
+  color: #aaa;
+  font-size: 0.32rem;
+  float: left;
+}
+
+.firm_order .wuliu-info dl dd {
+  font-size: 0.32rem;
+  color: #aaa;
+  float: left;
+}
+
+.firm_order .wuliu-info dl .light {
+  color: #444;
+}
+
+.firm_order .wuliu-detail {
+  margin-top: 0.266667rem;
+  background: #fff;
+  overflow: hidden;
+}
+
+.firm_order .wuliu-detail h1 {
+  color: #444;
+  font-size: 0.4rem;
+  padding: 0.4rem;
+}
+
+[data-dpr="1"] .firm_order .wuliu-detail h1 {
+  border-bottom: solid 1px #ededed;
+}
+
+[data-dpr="2"] .firm_order .wuliu-detail h1 {
+  border-bottom: solid 2px #ededed;
+}
+
+[data-dpr="3"] .firm_order .wuliu-detail h1 {
+  border-bottom: solid 3px #ededed;
+}
+
+.firm_order .wuliu-detail .detail {
+  margin: 0.666667rem 0.4rem 0.266667rem 0.4rem;
+  position: relative;
+}
+
+[data-dpr="1"] .firm_order .wuliu-detail .detail {
+  border-left: solid 2px #ededed;
+}
+
+[data-dpr="2"] .firm_order .wuliu-detail .detail {
+  border-left: solid 4px #ededed;
+}
+
+[data-dpr="3"] .firm_order .wuliu-detail .detail {
+  border-left: solid 6px #ededed;
+}
+
+.firm_order .wuliu-detail .detail ul {
+  padding-left: 0.266667rem;
+}
+
+.firm_order .wuliu-detail .detail ul li {
+  padding: 0.266667rem 0;
+  position: relative;
+}
+
+[data-dpr="1"] .firm_order .wuliu-detail .detail ul li {
+  border-bottom: solid 1px #ededed;
+}
+
+[data-dpr="2"] .firm_order .wuliu-detail .detail ul li {
+  border-bottom: solid 2px #ededed;
+}
+
+[data-dpr="3"] .firm_order .wuliu-detail .detail ul li {
+  border-bottom: solid 3px #ededed;
+}
+
+.firm_order .wuliu-detail .detail ul li i {
+  position: absolute;
+  left: -0.36rem;
+  top: 0.413333rem;
+  width: 0.133333rem;
+  height: 0.133333rem;
+  background: #dddddd;
+  border-radius: 0.066667rem;
+}
+
+.firm_order .wuliu-detail .detail ul li .currentI {
+  position: absolute;
+  top: 0;
+  left: -0.48rem;
+  width: 0.373333rem;
+  height: 0.373333rem;
+  background: #ffd6c4;
+  border-radius: 0.186667rem;
+}
+
+.firm_order .wuliu-detail .detail ul li .currentI span {
+  background: #ff4c01;
+  width: 0.266667rem;
+  display: block;
+  height: 0.266667rem;
+  border-radius: 0.133333rem;
+  margin: 0.053333rem;
+}
+
+.firm_order .wuliu-detail .detail ul li p {
+  color: #aaa;
+  font-size: 0.32rem;
+  overflow: hidden;
+  margin-bottom: 0.266667rem;
+}
+
+.firm_order .wuliu-detail .detail ul li span {
+  color: #aaa;
+  font-size: 0.32rem;
+}
+
+.firm_order .wuliu-detail .detail ul li:last-child {
+  border: none;
+}
+
+.firm_order .wuliu-detail .detail ul li:last-child b {
+  border: 0;
+}
+
+.firm_order .wuliu-detail .detail ul li:first-child {
+  padding-top: 0;
+}
+
+.firm_order .wuliu-detail .detail ul li:first-child p {
+  color: #444;
+}

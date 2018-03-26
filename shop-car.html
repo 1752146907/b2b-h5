@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>易订销</title>
+  <meta name="keywords" content="易订销"/>
+  <meta name="description" content="易订销"/>
+  <meta name="title" content="易订销"/>
+  <meta content="telephone=no,email=no,address=no" name="format-detection"/>
+  <meta name="apple-mobile-web-app-capable" content="yes"/>
+  <meta name="apple-mobile-web-app-status-bar-style" content="blank"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,minimal-ui"/>
+  <!--开始css引入-->
+
+  <!--本页专用样式-->
+  <link rel="stylesheet" href="css/shop-car.css"/>
+  <link rel="stylesheet" href="../common-assets/css/title_footer.css"/>
+  <!--结束css引入-->
+
+  <!--引入js文件开始-->
+  <script src="../common-assets/js/jquery-2.2.3.min.js"></script>
+  <script src="../common-assets/js/flexible.js"></script>
+  <script src="../common-assets/js/flexible_css.js"></script>
+  <!--引入js文件结束-->
+  <script src="js/jquery.base64.js"></script>
+  <script src="js/getJson.js" ></script>
+
+</head>
+<body>
+<div class="main">
+  <div class="header">
+    <div class="left">
+      <a class="top-back" onclick="window.history.go(-1)">
+        <img src="../common-assets/img/top-back.png">
+      </a>
+    </div>
+    <div class="title">
+      <h1>购物车</h1>
+    </div>
+    <div class="right">
+      <a class="shop-carlink" href="javascript:;">编辑</a>
+    </div>
+  </div>
+
+  <div class="shop-car">
+    <ul class="shop-carlist">
+
+    </ul>
+  </div>
+  <div class="shop-cartotal clearfix">
+    <label class="shop-carcheck">
+      <input type="checkbox">
+      <span></span>
+    </label>
+    <div class="shop-cartotalinfo">
+      合计<i>¥ <i class="shop-cartom">0</i></i><span> (不含运费)</span>
+    </div>
+    <button class="shop-carbtn">结算</button>
+    <button class="shop-del">删除</button>
+  </div>
+  <div class="shop-carshade">
+    <div class="shop-carmodel">
+      <div class="model">
+        确认删除选中商品吗
+      </div>
+      <div class="model-btn clearfix">
+        <a class="model-btn-no" href="javascript:;">取消</a>
+        <a class="model-btn-yes" href="javascript:;">确认</a>
+      </div>
+    </div>
+  </div>
+
+  <!--无数据-->
+  <div class="shop-carno shop-carnoN">
+    <div class="shop-carnohint clearfix">
+      <span>您可以在登录后同步您购物车中的商品</span>
+      <a href="login.html">登录</a>
+    </div>
+    <div class="shop-carnowrap">
+      <span><img src="../common-assets/img/bigshopcar.png" alt=""></span>
+      <p>购物车空空，赶紧选购吧</p>
+      <a href="">去挑选</a>
+    </div>
+  </div>
+
+
+    <!--无数据-->
+    <div class="shop-carno shop-carnoY">
+
+        <div class="shop-carnowrap">
+            <span><img src="../common-assets/img/bigshopcar.png" alt=""></span>
+            <p>购物车空空，赶紧选购吧</p>
+            <a href="">去挑选</a>
+        </div>
+    </div>
+
+
+  <section class="bot">
+      <ul>
+          <li><a  class="index"><i class="ico ico1"></i>首页</a></li>
+          <li  class="botOn"><a href="#"><i class="ico ico2"></i>购物车<em></em></a></li>
+          <li><a class="my"><i class="ico ico3"></i>我</a></li>
+      </ul>
+  </section>
+
+
+</div>
+</body>
+<script src="js/carts.js"></script>
+
+</html>

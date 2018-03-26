@@ -1,0 +1,206 @@
+.search-bar {
+  position: fixed;
+  /*top fixed search bar comment*/
+  z-index: 2;
+  width: 100%;
+}
+
+[data-dpr="1"] .search-bar {
+  top: 12px;
+}
+
+[data-dpr="2"] .search-bar {
+  top: 24px;
+}
+
+[data-dpr="3"] .search-bar {
+  top: 36px;
+}
+
+.search-bar .position-center {
+  position: relative;
+  width: 85%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.search-bar .position-center .search-box {
+  position: relative;
+  float: left;
+  width: 75%;
+}
+
+.search-bar .position-center .search-box input {
+  width: 100%;
+  height: 0.76rem;
+  border: 1px solid #b6b6bc;
+  border-radius: 3px;
+  outline: none;
+}
+
+[data-dpr="1"] .search-bar .position-center .search-box input {
+  padding-left: 11px;
+  font-size: 11px;
+}
+
+[data-dpr="2"] .search-bar .position-center .search-box input {
+  padding-left: 22px;
+  font-size: 22px;
+}
+
+[data-dpr="3"] .search-bar .position-center .search-box input {
+  padding-left: 33px;
+  font-size: 33px;
+}
+
+.search-bar .position-center .search-box a {
+  position: absolute;
+  top: 0;
+  right: -0.333333rem;
+  width: 0.8rem;
+  height: 0.8rem;
+  line-height: 0.8rem;
+}
+
+.search-bar .position-center .search-box a .icon-search {
+  width: 0.64rem;
+  height: 0.64rem;
+  margin-top: 0.133333rem;
+  background: url("../img/iconfont-search.png") no-repeat;
+  background-size: contain;
+}
+
+.search-bar .help-icon {
+  float: left;
+  height: 0.8rem;
+  padding-left: 0.8rem;
+}
+
+.search-bar .help-icon .bangzhu {
+  width: 0.8rem;
+  height: 0.8rem;
+  background: url("../img/iconfont-bangzhu.png") no-repeat;
+  background-size: contain;
+}
+
+.tab-bar {
+  /*tab-bar*/
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  vertical-align: middle;
+  background-color: rgba(212, 212, 212, 0.7);
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+}
+
+[data-dpr="1"] .tab-bar {
+  height: 50px;
+}
+
+[data-dpr="2"] .tab-bar {
+  height: 100px;
+}
+
+[data-dpr="3"] .tab-bar {
+  height: 150px;
+}
+
+.tab-bar .item {
+  display: inline-block;
+  color: #656565;
+  text-align: center;
+  text-decoration: none;
+}
+
+[data-dpr="1"] .tab-bar .item {
+  margin: 5px 0;
+}
+
+[data-dpr="2"] .tab-bar .item {
+  margin: 10px 0;
+}
+
+[data-dpr="3"] .tab-bar .item {
+  margin: 15px 0;
+}
+
+.tab-bar .item .icon {
+  width: 0.6rem;
+  margin: 0 auto 0.066667rem auto;
+}
+
+.tab-bar .item .icon .zhanshi {
+  width: 0.6rem;
+  height: 0.6rem;
+  background: url("../img/iconfont-zhanshi.png") no-repeat;
+  background-size: contain;
+}
+
+.tab-bar .item .icon .shang {
+  width: 0.6rem;
+  height: 0.6rem;
+  background: url("../img/icon-jingbo-logo.png") no-repeat;
+  background-size: contain;
+}
+
+.tab-bar .item .icon .gouwuche {
+  width: 0.666667rem;
+  height: 0.586667rem;
+  background: url("../img/iconfont-gouwuche.png") no-repeat;
+  background-size: contain;
+}
+
+.tab-bar .item .icon .kttx {
+  width: 0.586667rem;
+  height: 0.586667rem;
+  background: url("../img/iconfont-kttx.png") no-repeat;
+  background-size: contain;
+}
+
+.tab-bar .item .icon .fenlei {
+  width: 0.573333rem;
+  height: 0.573333rem;
+  background: url("../img/iconfont-fenlei.png") no-repeat;
+  background-size: contain;
+}
+
+.tab-bar .item .icon .search-icon {
+  width: 0.6rem;
+  height: 0.6rem;
+  background: url("../img/iconfont-search.png") no-repeat;
+  background-size: contain;
+}
+
+[data-dpr="1"] .tab-bar .item .title {
+  font-size: 10px;
+}
+
+[data-dpr="2"] .tab-bar .item .title {
+  font-size: 20px;
+}
+
+[data-dpr="3"] .tab-bar .item .title {
+  font-size: 30px;
+}
+
+.clearfix:after,
+.search-bar .position-center:after,
+.search-bar .position-center .search-box:after,
+.search-bar .help-icon:after {
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+  content: ".";
+}

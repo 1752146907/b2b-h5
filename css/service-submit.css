@@ -1,0 +1,243 @@
+body,
+html {
+  background-color: #f3f3f3;
+  height: 100%;
+}
+
+.shop-carcheck {
+  position: relative;
+  float: left;
+}
+
+.shop-carcheck input {
+  position: absolute;
+  width: 0;
+  height: 0;
+  opacity: 0;
+}
+
+.shop-carcheck span {
+  width: 0.533333rem;
+  height: 0.533333rem;
+  display: block;
+  padding-left: 0.413333rem;
+  padding-right: 0.266667rem;
+  height: 1.186667rem;
+  background: url("../images/shop-carcheck.png") no-repeat 0.413333rem center;
+  background-size: 0.533333rem;
+}
+
+.shop-carcheck input:checked + span {
+  background: url("../images/shop-carchecked.png") no-repeat 0.413333rem center;
+  background-size: 0.533333rem;
+}
+
+.service-submit .service-subshop {
+  background-color: #fff;
+  height: 2.6rem;
+  padding-top: 0.36rem;
+  padding-left: 0.4rem;
+}
+
+.service-submit .service-subshop .service-subimg {
+  width: 2.24rem;
+  height: 2.24rem;
+  float: left;
+}
+
+.service-submit .service-subshop .service-subimg img {
+  width: 2.24rem;
+  height: 2.24rem;
+}
+
+.service-submit .service-subshop .service-subinfo {
+  float: left;
+  padding-left: 0.306667rem;
+  width: 6.666667rem;
+}
+
+.service-submit .service-subshop .service-subinfo h2 {
+  font-size: 0.373333rem;
+  color: #444;
+  height: 1.466667rem;
+  padding-top: 0.133333rem;
+}
+
+.service-submit .service-subshop .service-subinfo p span {
+  color: #ff4c01;
+  font-size: 0.48rem;
+  float: left;
+}
+
+.service-submit .service-subshop .service-subinfo p i {
+  font-style: normal;
+  padding-top: 0.186667rem;
+  float: right;
+  font-size: 0.32rem;
+  color: #444;
+}
+
+.service-submit .service-subtype {
+  margin-top: 0.253333rem;
+  background-color: #fff;
+  padding-left: 0.4rem;
+  padding-bottom: 0.4rem;
+}
+
+.service-submit .service-subtype span {
+  font-size: 0.293333rem;
+  color: #444;
+  height: 0.826667rem;
+  line-height: 0.826667rem;
+  display: block;
+}
+
+.service-submit .service-subtype a {
+  display: inline-block;
+  width: 4rem;
+  height: 0.866667rem;
+  line-height: 0.866667rem;
+  border: 0.026667rem solid #b4b4b4;
+  color: #444;
+  font-size: 0.48rem;
+  border-radius: 0.106667rem;
+  text-align: center;
+}
+
+.service-submit .service-subtype .refund {
+  margin-left: 1.066667rem;
+}
+
+.service-submit .sub-num {
+  margin-top: 0.253333rem;
+  background-color: #fff;
+  padding-left: 0.4rem;
+  padding-bottom: 0.4rem;
+}
+
+.service-submit .sub-num span {
+  font-size: 0.293333rem;
+  color: #444;
+  height: 0.826667rem;
+  line-height: 0.826667rem;
+  display: block;
+}
+
+.service-submit .sub-num .shop-caredit {
+  border: 0.026667rem solid #ddd;
+  border-radius: 0.053333rem;
+  width: 2.186667rem;
+  height: 0.586667rem;
+  line-height: 0.586667rem;
+}
+
+.service-submit .sub-num .shop-caredit span {
+  border-left: 0.026667rem solid #ddd;
+  border-right: 0.026667rem solid #ddd;
+  height: 0.586667rem;
+  line-height: 0.64rem;
+  float: left;
+  width: 0.773333rem;
+  text-align: center;
+  color: #aaa;
+  font-size: 0.346667rem;
+}
+
+.service-submit .sub-num .shop-caredit a {
+  float: left;
+  text-align: center;
+  width: 0.6rem;
+  color: #ddd;
+  line-height: 0.56rem;
+}
+
+.service-submit .sub-num .shop-caredit .shop-carminus {
+  font-size: 0.266667rem;
+}
+
+.service-submit .sub-num .shop-caredit .shop-caradd {
+  font-size: 0.426667rem;
+}
+
+.service-submit .sub-reason {
+  background-color: #fff;
+  color: #444;
+  font-size: 0.373333rem;
+  margin-top: 0.266667rem;
+}
+
+.service-submit .sub-reason a {
+  display: block;
+  height: 1.413333rem;
+  line-height: 1.413333rem;
+  padding-left: 0.4rem;
+  color: #444;
+  margin-right: 0.48rem;
+  background: url("../images/zk.png") no-repeat right center;
+  background-size: 0.24rem;
+}
+
+.service-submit .sub-reason .sub-realist {
+  height: 0;
+  overflow: hidden;
+}
+
+.service-submit .sub-reason .sub-realist ul li {
+  border-top: 0.026667rem solid #f3f3f3;
+  padding-left: 0.4rem;
+  height: 1.413333rem;
+  line-height: 1.413333rem;
+}
+
+.service-submit .sub-reason .sub-realist ul li .shop-carcheck {
+  width: 100%;
+}
+
+.service-submit .sub-reason .sub-realist ul li .shop-carcheck span {
+  float: right;
+  padding-right: 0.466667rem;
+  height: 1.413333rem;
+}
+
+.service-submit .sub-info {
+  background-color: #fff;
+  margin-top: 0.266667rem;
+  padding-left: 0.48rem;
+}
+
+.service-submit .sub-info .sub-infohd {
+  font-size: 0.373333rem;
+  color: #444;
+  height: 1.133333rem;
+  line-height: 1.133333rem;
+  border-bottom: 0.026667rem solid #eee;
+}
+
+.service-submit .sub-info .sub-infotxt {
+  padding-right: 0.466667rem;
+  padding-top: 0.266667rem;
+  padding-bottom: 0.266667rem;
+}
+
+.service-submit .sub-info .sub-infotxt textarea {
+  resize: none;
+  width: 100%;
+  font-size: 0.32rem;
+  height: 2.933333rem;
+}
+
+.service-submit .sub-btn {
+  padding: 0.373333rem 0.373333rem 0.266667rem;
+}
+
+.service-submit .sub-btn a {
+  display: block;
+  width: 100%;
+  text-align: center;
+  height: 1.333333rem;
+  line-height: 1.333333rem;
+  color: #fff;
+  font-size: 0.48rem;
+  background-color: #ff4c01;
+}
+.on {background-color: #ff4c01; color: #fff}

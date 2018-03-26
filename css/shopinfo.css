@@ -1,0 +1,197 @@
+@charset "UTF-8";
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Microsoft YaHei", "微软雅黑";
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font-family: "Microsoft YaHei", "微软雅黑";
+}
+
+.wrapper {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
+  overflow-x: hidden;
+  background-color: #f3f3f3;
+}
+
+.shopHead {
+  height: 1.2rem;
+  line-height: 1.2rem;
+  text-align: center;
+  font-size: 0.48rem;
+  color: #444;
+  background-color: #fff;
+  border-bottom: 0.013333rem #e6e6e6 solid;
+  position: relative;
+}
+
+.shopHead img {
+  width: 0.28rem;
+  height: 0.506667rem;
+  left: 0.4rem;
+  top: 0.346667rem;
+  position: absolute;
+}
+
+.infoTop {
+  background-color: #fff;
+  padding: 0.4rem 0;
+  text-align: center;
+  margin-bottom: 0.266667rem;
+}
+
+.infoTop img {
+  width: 1.786667rem;
+  height: 1.786667rem;
+  border-radius: 100%;
+  margin: 0 auto;
+}
+
+.infoTop h4 {
+  height: 0.8rem;
+  line-height: 0.8rem;
+  font-size: 0.48rem;
+  margin-top: 0.266667rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.shopInfoName {
+  background-color: #fff;
+}
+
+.shopInfoName .infoName {
+  padding: 0.266667rem 0.4rem;
+  clear: both;
+  overflow: hidden;
+  border-bottom: 0.013333rem #e6e6e6 solid;
+}
+
+.shopInfoName .infoName b {
+  display: inline-block;
+  float: left;
+  font-size: 0.4rem;
+  width: 2.093333rem;
+  font-weight: normal;
+}
+
+.shopInfoName .infoName span {
+  display: inline-block;
+  float: left;
+  font-size: 0.373333rem;
+  color: #aaa;
+  width: 6.666667rem;
+}
+
+.shopInfoName .infoTime {
+  height: 1.2rem;
+  line-height: 1.2rem;
+  padding: 0 0.4rem;
+}
+
+.shopInfoName .infoTime b {
+  display: inline-block;
+  float: left;
+  font-size: 0.4rem;
+  width: 2.093333rem;
+  font-weight: normal;
+}
+
+.shopInfoName .infoTime span {
+  display: inline-block;
+  float: left;
+  font-size: 0.373333rem;
+  color: #aaa;
+  width: 6.666667rem;
+}

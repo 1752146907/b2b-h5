@@ -1,0 +1,463 @@
+body,
+html {
+  background-color: #f3f3f3;
+  height: 100%;
+}
+
+.shop-info{position: relative;}
+
+.shop-title{
+    position: absolute;
+    top: 10px;
+    left: 58px;
+    width: 262px;
+}
+
+.shop-subitem {
+  font-size: 0.373333rem;
+  height: 1.333333rem;
+  line-height: 1.333333rem;
+  padding-left: 0.426667rem;
+  background-color: #fff;
+  padding-right: 0.333333rem;
+  margin-top: 0.266667rem;
+}
+
+.shop-subitem a {
+  color: #2c2c2c;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.shop-subitem a span {
+  font-size: 0.32rem;
+  color: #aaa;
+  float: right;
+  padding-right: 0.453333rem;
+  background: url("../../common-assets/img/link.png") no-repeat right center;
+  background-size: 0.133333rem;
+}
+
+.shop-subitem a .no-next {
+  background: none;
+  padding-right: 0;
+}
+
+.main {
+  height: 100%;
+}
+
+.shop-submit {
+  padding-top: 0.266667rem;
+  /*height: 100%;*/
+  box-sizing: border-box;
+  overflow-y: auto;
+  padding-bottom: .546667rem;
+}
+
+.shop-submit .shop-address-no {
+  background: url("../../common-assets/img/address-no.png") no-repeat 0.413333rem center #fff;
+  height: 1.84rem;
+  line-height: 1.84rem;
+  background-size: 0.48rem;
+}
+
+.shop-submit .shop-address-no a {
+  background: url("../../common-assets/img/link.png") no-repeat 96% center;
+  background-size: 0.133333rem;
+  color: #444;
+  font-size: 0.373333rem;
+  display: block;
+  padding-left: 1.28rem;
+}
+
+.shop-submit .shop-address {
+  background: url("../../common-assets/img/link.png") no-repeat 96% center #fff;
+  background-size: 0.133333rem;
+  height: 2.133333rem;
+}
+
+.shop-submit .shop-address a {
+  display: block;
+}
+
+.shop-submit .shop-address .shop-submitname {
+  font-size: 0.4rem;
+  color: #222;
+  padding-top: 0.32rem;
+  padding-left: 1.293333rem;
+}
+
+.shop-submit .shop-address .shop-submitname span {
+  float: right;
+  padding-right: 0.92rem;
+  padding-top: 0.08rem;
+}
+
+.shop-submit .shop-address p {
+  padding-top: 0.16rem;
+  font-size: 0.32rem;
+  color: #444;
+  line-height: 0.493333rem;
+  height: 0.46667rem;
+  overflow: hidden;
+  padding-left: 1.253333rem;
+  padding-right: 0.8rem;
+  background: url("../../common-assets/img/address.png") no-repeat 0.466667rem center;
+  background-size: 0.413333rem;
+}
+
+.shop-submit .shop-submitmain {
+  background-color: #fff;
+  margin-top: 0.266667rem;
+}
+
+.shop-submit .shop-submitmain .shop-subitem {
+  border-top: 0.026667rem solid #ededed;
+  margin-top: 0;
+}
+
+.shop-submit .shop-submitmain .shop-submitli {
+  border-top: 0.026667rem solid #ededed;
+  height: 2.16rem;
+}
+
+.shop-submit .shop-submitmain .shop-submitli ul {
+  padding-top: 0.266667rem;
+  padding-left: 0.28rem;
+  float: left;
+}
+
+.shop-submit .shop-submitmain .shop-submitli ul li {
+  float: left;
+  padding: 0 0.133333rem;
+}
+
+.shop-submit .shop-submitmain .shop-submitli ul li img {
+  width: 1.413333rem;
+  height: 1.626667rem;
+}
+
+.shop-submit .shop-submitmain .shop-submitli span {
+  height: 2.16rem;
+  float: right;
+  font-size: 0.32rem;
+  color: #aaa;
+  line-height: 2.16rem;
+  padding-right: 0.76rem;
+}
+
+.shop-submit .shop-submitmain .shop-submithd {
+  font-size: 0.373333rem;
+  color: #444;
+  height: 1.053333rem;
+  line-height: 1.053333rem;
+  padding-left: 0.44rem;
+}
+
+.shop-submit .shop-submitmain .shop-subiteminp {
+  height: 1.293333rem;
+  line-height: 1.293333rem;
+  font-size: 0.373333rem;
+  color: #2c2c2c;
+  padding-left: 0.44rem;
+  border-top: 0.026667rem solid #ededed;
+}
+
+.shop-submit .shop-submitmain .shop-subiteminp input {
+  padding-left: 0.24rem;
+  padding-top: 0.266667rem;
+  width: 7.2rem;
+    border:0px;
+}
+
+.shop-submit .shop-submitmain .shop-subiteminfo {
+  border-top: 0.026667rem solid #ededed;
+  text-align: right;
+  height: 1.2rem;
+  padding-right: 0.413333rem;
+  font-size: 0.32rem;
+  color: #444;
+  padding-top: 0.186667rem;
+}
+
+.shop-submit .shop-submitmain .shop-subiteminfo span {
+  color: #f01401;
+}
+
+.shop-submit .shop-submitpay {
+  background-color: #fff;
+  margin-top: 0.266667rem;
+}
+
+.shop-submit .shop-submitpay div {
+  font-size: 0.373333rem;
+  color: #444;
+  padding-left: 1.333333rem;
+  background: url("../images/invoice-radiohd.png") no-repeat 0.413333rem center;
+  background-size: 0.586667rem;
+  height: 1.066667rem;
+  line-height: 1.066667rem;
+}
+
+.shop-submit .shop-submitpay label {
+  display: block;
+  height: 1.306667rem;
+  line-height: 1.306667rem;
+  border-top: 0.026667rem solid #ededed;
+}
+
+.shop-submit .shop-submitpay label span {
+  font-size: 0.373333rem;
+  color: #444;
+  margin-left: 0.493333rem;
+  float: left;
+}
+
+.shop-submit .shop-submitpay label span img {
+  width: 0.613333rem;
+  height: 0.613333rem;
+  vertical-align: middle;
+  margin-right: 0.213333rem;
+}
+
+.shop-submit .shop-submitpay label input {
+  position: absolute;
+  width: 0;
+  height: 0;
+  opacity: 0;
+}
+
+.shop-submit .shop-submitpay label i {
+  width: 0.533333rem;
+  float: right;
+  padding-left: 0.413333rem;
+  padding-right: 0.266667rem;
+  height: 1.306667rem;
+  background: url("../images/shop-carcheck.png") no-repeat 0.413333rem center;
+  background-size: 0.533333rem;
+}
+
+.shop-submit .shop-submitpay label input:checked + i {
+  background: url("../images/shop-carchecked.png") no-repeat 0.413333rem center;
+  background-size: 0.533333rem;
+}
+
+.shop-subtotal {
+  position: absolute;
+  bottom: 0;
+  background-color: #fff;
+  width: 100%;
+  border-top: 0.026667rem solid #c7c7c7;
+}
+
+.shop-subtotal .shop-subtotalinfo {
+  font-size: 0.32rem;
+  color: #444;
+  padding-left: 0.44rem;
+  float: left;
+  height: 1.28rem;
+  line-height: 1.28rem;
+}
+
+.shop-subtotal .shop-subtotalinfo i {
+  font-size: 0.48rem;
+  padding-left: 0.506667rem;
+  color: #ff4c01;
+  font-style: normal;
+  vertical-align: -0.053333rem;
+}
+
+.shop-subtotal .shop-subtotalinfo span {
+  font-size: 0.32rem;
+  color: #9b9b9b;
+}
+
+.shop-subtotal .shop-subbtn {
+  float: right;
+  width: 2.453333rem;
+  text-align: center;
+  line-height: 1.28rem;
+  height: 1.28rem;
+  border: none;
+  background-color: #ff4c01;
+  color: #fff;
+  font-size: 0.48rem;
+}
+
+
+.am-share {
+    bottom: -1.866667rem;
+    left: 0;
+    position: fixed;
+    width: 100%;
+    z-index: 1110;
+    background-color: #fff;
+    -webkit-transform: translateY(100%);
+    -ms-transform: translateY(100%);
+    -o-transform: translateY(100%);
+    transform: translateY(100%);
+    -webkit-transition: -webkit-transform 300ms;
+    transition: -webkit-transform 300ms;
+    -o-transition: -o-transform 300ms;
+    transition: transform 300ms;
+    transition: transform 300ms, -webkit-transform 300ms, -o-transform 300ms;
+}
+
+.am-share .am-share-footer {
+    height: 1.466667rem;
+    margin: 0 0.4rem;
+    border-bottom: 0.013333rem #e0e0e0 solid;
+    line-height: 1.466667rem;
+    font-size: 0.426667rem;
+    color: #444;
+}
+
+.am-share .am-share-footer .share_btn {
+    display: block;
+    position: absolute;
+    top: 0.066667rem;
+    right: 0.133333rem;
+    border: none;
+    width: .8rem;
+    height: .8rem;
+    border-radius: 0;
+    cursor: pointer;
+    -webkit-transition: background-color 300ms ease-out 0s, border-color 300ms ease-out 0s;
+    -o-transition: background-color 300ms ease-out 0s, border-color 300ms ease-out 0s;
+    transition: background-color 300ms ease-out 0s, border-color 300ms ease-out 0s;
+    vertical-align: middle;
+    white-space: nowrap;
+    font-family: "微软雅黑";
+}
+
+.am-share .am-share-footer .share_btn img {
+    width: 0.453333rem;
+    height: 0.426667rem;
+}
+
+.am-share .am-share-sns {
+    background-color: #fff;
+    padding: 0 5% 5%;
+    height: auto;
+    zoom: 1;
+}
+
+.am-share .shop-submitpay {
+    background-color: #fff;
+    margin: 0  0.4rem;
+}
+
+.am-share .shop-submitpay label {
+    display: block;
+    height: 1.306667rem;
+    line-height: 1.306667rem;
+    border-bottom: 0.026667rem solid #ededed;
+}
+
+.am-share .shop-submitpay label span {
+    font-size: 0.373333rem;
+    color: #444;
+    margin-left: 0.493333rem;
+    float: left;
+}
+
+.am-share .shop-submitpay label span img {
+    width: 0.613333rem;
+    height: 0.613333rem;
+    vertical-align: middle;
+    margin-right: 0.213333rem;
+}
+
+.am-share .shop-submitpay label input {
+    position: absolute;
+    width: 0;
+    height: 0;
+    opacity: 0;
+}
+
+.am-share .shop-submitpay label i {
+    width: 0.533333rem;
+    float: right;
+    padding-left: 0.413333rem;
+    padding-right: 0.266667rem;
+    height: 1.306667rem;
+    background: url("../images/shop-carcheck.png") no-repeat 0.413333rem center;
+    background-size: 0.533333rem;
+}
+
+.am-share .shop-submitpay label input:checked + i {
+    background: url("../images/shop-carchecked.png") no-repeat 0.413333rem center;
+    background-size: 0.533333rem;
+}
+
+.am-share .shop-btn {
+    width: 100%;
+    height: 1.28rem;
+    margin-top: 0.666667rem;
+    line-height: 1.28rem;
+    text-align: center;
+    background-color: #ff4c01;
+    color: #fff;
+    font-size: 0.48rem;
+    border: none;
+    display: block;
+    margin-bottom: 1.866667rem;
+}
+
+.am-modal-active {
+    -o-transform: translateY(0);
+    transform: translateY(0);
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0);
+}
+
+.am-modal-out {
+    z-index: 1109;
+    -webkit-transform: translateY(100%);
+    -ms-transform: translateY(100%);
+    -o-transform: translateY(100%);
+    transform: translateY(100%);
+}
+
+.sharebg {
+    background-color: rgba(0, 0, 0, 0.6);
+    bottom: 0;
+    height: 100%;
+    left: 0;
+    opacity: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 100%;
+    z-index: 1100;
+    display: none;
+}
+
+.sharebg-active {
+    opacity: 1;
+    display: block;
+}
+
+.am-share .bottom {
+    padding: 0;
+}
+
+.shop-submitpay label:last-child {
+    border-bottom: 0;
+}
+
+.shop_payPass {
+    margin:  .4rem;
+    width: 90%;
+}
+.shop_payPass input {
+    height: 1rem;
+    line-height: 1rem;
+    width: 96%;
+    padding: 0 2%;
+    border: 0.026667rem solid #ededed;
+}

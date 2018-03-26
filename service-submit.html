@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>易订销</title>
+  <meta name="keywords" content="易订销"/>
+  <meta name="description" content="易订销"/>
+  <meta name="title" content="易订销"/>
+  <meta content="telephone=no,email=no,address=no" name="format-detection"/>
+  <meta name="apple-mobile-web-app-capable" content="yes"/>
+  <meta name="apple-mobile-web-app-status-bar-style" content="blank"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,minimal-ui"/>
+  <!--开始css引入-->
+
+  <!--本页专用样式-->
+  <link rel="stylesheet" href="css/service-submit.css"/>
+  <link rel="stylesheet" href="../common-assets/css/title_footer.css"/>
+  <!--结束css引入-->
+
+  <!--引入js文件开始-->
+  <script src="../common-assets/js/jquery-2.2.3.min.js"></script>
+  <script src="../common-assets/js/flexible.js"></script>
+  <script src="../common-assets/js/flexible_css.js"></script>
+  <!--引入js文件结束-->
+    <script src="js/jquery.base64.js" ></script>
+    <script src="js/getJson.js"></script>
+</head>
+<body>
+<div class="main">
+  <div class="header">
+    <div class="left">
+      <a class="top-back"  onclick="window.history.go(-1)">
+        <img src="../common-assets/img/top-back.png">
+      </a>
+    </div>
+    <div class="title">
+      <h1>申请售后服务</h1>
+    </div>
+  </div>
+
+  <div class="service-submit">
+    <!--<div class="service-subnum">订单号：1604061423050036</div>-->
+    <div class="service-subshop clearfix">
+      <div class="service-subimg"><img src="" alt=""></div>
+      <div class="service-subinfo">
+        <h2>商品名称</h2>
+        <p class="clearfix"><span>¥ 269</span><i>x2</i></p>
+      </div>
+    </div>
+    <div class="service-subtype">
+      <span>选择服务类型</span>
+      <a class="backgoods">退货</a><a class="refund">退款</a>
+    </div>
+    <!--<div class="sub-num">-->
+      <!--<span>申请数量</span>-->
+      <!--<div class="shop-caredit">-->
+        <!--<a class="shop-carminus" href="javascript:;">—</a>-->
+        <!--<span>1</span>-->
+        <!--<a class="shop-caradd" href="javascript:;">+</a>-->
+      <!--</div>-->
+    <!--</div>-->
+    <div class="sub-reason">
+      <a href="javascript:;">请选择退货原因</a>
+      <div class="sub-realist">
+        <ul>
+          <li>
+            <label class="shop-carcheck shop-checkdef">
+              <input name="subtype" class="editdef" type="radio">
+              <span></span>
+              <em>不想买了</em>
+            </label>
+          </li>
+          <li>
+            <label class="shop-carcheck shop-checkdef">
+              <input name="subtype" class="editdef" type="radio">
+              <span></span>
+                <em> 拍错了/订单信息错误</em>
+            </label>
+          </li>
+          <li>
+            <label class="shop-carcheck shop-checkdef">
+              <input name="subtype" class="editdef" type="radio">
+              <span></span>
+                </em>未收到货</em>
+            </label>
+          </li>
+          <li>
+            <label class="shop-carcheck shop-checkdef">
+              <input name="subtype" class="editdef" type="radio">
+              <span></span>
+                </em>收到商品破损</em>
+            </label>
+          </li>
+          <li>
+            <label class="shop-carcheck shop-checkdef">
+              <input name="subtype" class="editdef" type="radio">
+              <span></span>
+                </em>其他</em>
+            </label>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="sub-info">
+      <div class="sub-infohd">问题描述</div>
+      <div class="sub-infotxt">
+        <textarea placeholder="请您再次描述详细问题" id="subarea" maxlength="300"></textarea>
+      </div>
+    </div>
+    <div class="sub-btn"><a>提交申请</a></div>
+  </div>
+</div>
+<input type="hidden" id="item_num">
+<input type="hidden" id="item_price">
+</body>
+<script>
+  $(function(){
+      $('.sub-reason a').on('click',function(){
+         if($(this).parents('.sub-reason').find('.sub-realist').height() == 0){
+             $(this).parents('.sub-reason').find('.sub-realist').animate({'height':$(this).parents('.sub-reason').find('.sub-realist ul').height()});
+         }else{
+             $(this).parents('.sub-reason').find('.sub-realist').animate({'height':'0'});
+         }
+      });
+  });
+</script>
+<script src="js/service-submit.js"></script>
+</html>

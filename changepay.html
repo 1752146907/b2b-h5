@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>修改支付密码</title>
+    <meta name="keywords" content="经销商店铺"/>
+    <meta name="description" content="经销商店铺"/>
+    <meta name="title" content="经销商店铺"/>
+    <meta content="telephone=no,email=no,address=no" name="format-detection"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="blank"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,minimal-ui"/>
+    <!--开始css引入-->
+    <!--本页专用样式-->
+    <link rel="stylesheet" href="css/setup.css"/>
+    <!--结束css引入-->
+    <!--引入js文件开始-->
+    <script src="../common-assets/js/flexible.js"></script>
+    <script src="../common-assets/js/flexible_css.js"></script>
+    <!--引入jq库文件-->
+    <script src="../common-assets/js/jquery-2.2.3.min.js"></script>
+    <!--引入全局效果配置文件-->
+    <!--引入js文件结束-->
+    <script src="js/jquery.base64.js" ></script>
+    <script src="js/getJson.js" ></script>
+
+</head>
+<section class='wrapper'>
+    <section class="shopHead"><a  onclick="window.history.go(-1)"><img src="images/logo-back.png"> </a>修改支付密码</section>
+    <section class="payMain">
+        <p>请输入<em>135*****022</em>收到的短信验证码</p>
+        <ul>
+            <li class="cellYzm loginCode"><input type="text" placeholder="请输入验证码" class="vCode"><a><img src=""></a></li>
+            <li class="cellYzm"><span>验证码</span><input type="tel" placeholder="请输入短信验证码" class="yCode"><a class="getcode">获取验证码</a></li>
+        </ul>
+
+    </section>
+    <section class="payBot">
+        <p>请输入6位数支付密码</p>
+        <ul>
+            <li><span>支付密码</span><input type="password" placeholder="请输入支付密码" class="newPayword"></li>
+            <li><span>确认密码</span><input type="password" placeholder="请再次输入密码" class="ordPayword"></li>
+        </ul>
+
+    </section>
+    <a class="tcBtn">确认</a>
+</section>
+<script src="js/changepay.js" ></script>
+</body>
+</html>

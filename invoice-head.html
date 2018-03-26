@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>易订销</title>
+  <meta name="keywords" content="易订销"/>
+  <meta name="description" content="易订销"/>
+  <meta name="title" content="易订销"/>
+  <meta content="telephone=no,email=no,address=no" name="format-detection"/>
+  <meta name="apple-mobile-web-app-capable" content="yes"/>
+  <meta name="apple-mobile-web-app-status-bar-style" content="blank"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,minimal-ui"/>
+  <!--开始css引入-->
+
+  <!--本页专用样式-->
+  <link rel="stylesheet" href="css/invoice-head.css"/>
+  <link rel="stylesheet" href="../common-assets/css/title_footer.css"/>
+  <!--结束css引入-->
+
+  <!--引入js文件开始-->
+  <script src="../common-assets/js/jquery-2.2.3.min.js"></script>
+  <script src="../common-assets/js/flexible.js"></script>
+  <script src="../common-assets/js/flexible_css.js"></script>
+  <!--引入js文件结束-->
+    <script src="js/jquery.base64.js"></script>
+    <script src="js/getJson.js" ></script>
+
+</head>
+<body>
+<div class="main">
+  <div class="header">
+    <div class="left">
+      <a class="top-back" onclick="window.history.go(-1)">
+        <img src="../common-assets/img/top-back.png">
+      </a>
+    </div>
+    <div class="title">
+      <h1>发票信息</h1>
+    </div>
+  </div>
+
+  <div class="invoice invoice-head">
+    <div class="invoice-radio">
+      <div class="invoice-radiohd">发票信息</div>
+      <div class="invoice-radiolist invoice-radioinfo clearfix">
+        <label class="invoice-def">
+          <input type="radio" name="invoice" checked>
+          <span>普通发票</span>
+        </label>
+        <label class="invoice-zzs">
+          <input type="radio" name="invoice">
+          <span>增值税发票</span>
+        </label>
+        <label class="invoice-no">
+          <input type="radio" name="invoice">
+          <span>不需要发票</span>
+        </label>
+      </div>
+    </div>
+    <div class="invoice-radio invoice-radiohead">
+      <div class="invoice-radiohd">发票抬头</div>
+      <div class="invoice-radiolist clearfix">
+        <label class="invoice-personal">
+          <input type="radio" name="invoice-head" checked>
+          <span>个人</span>
+        </label>
+        <label class="invoice-company">
+          <input type="radio" name="invoice-head">
+          <span>企业</span>
+        </label>
+      </div>
+      <div class="invoice-companyhide">
+        <input placeholder="请输入企业名称" type="text" class="qyName">
+      </div>
+        <div class="invoice-companyhide">
+            <input placeholder="请输入发票内容" type="text" class="qyContent">
+        </div>
+    </div>
+    <ul class="invoice-input">
+      <li class="clearfix">
+        <label>单位名称：</label>
+        <input type="text" placeholder="请填写单位名称" class="contany" />
+      </li>
+      <li class="clearfix">
+        <label>纳税人识别号：</label>
+        <input type="text" placeholder="请输入纳税人识别号"  class="taxpayer" />
+      </li>
+      <li class="clearfix">
+        <label>开户银行：</label>
+        <input type="text" placeholder="请输入开户银行" class="bank" />
+      </li>
+      <li class="clearfix">
+        <label>银行账号：</label>
+        <input type="tel" placeholder="请输入银行账号" class="account"  />
+      </li>
+      <li class="clearfix">
+        <label>公司地址：</label>
+        <input type="text" placeholder="请输入公司地址" class="addr"  />
+      </li>
+      <li class="clearfix">
+        <label>公司电话：</label>
+        <input type="tel" placeholder="请输入公司电话" class="call"  />
+      </li>
+    </ul>
+    <div class="invoice-hint">发票内容由商家决定(如需修改，请联系商家)，发票由商家开具寄出</div>
+    <button class="invoice-btn ptBtn">确定</button>
+
+  </div>
+</div>
+<script>
+
+</script>
+<script src="js/invoice-head.js" ></script>
+</body>
+</html>

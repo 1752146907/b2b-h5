@@ -1,0 +1,590 @@
+@charset "UTF-8";
+
+/*@import 'mixin';*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  font-family: 'Microsoft YaHei', '微软雅黑';
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  border: 0;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  background: #f4f4f4;
+}
+
+.main {
+  width: 100%;
+  margin: 0 auto;
+  background: #f7f7f7;
+  height: 100%;
+}
+
+[data-dpr="1"] .main {
+  max-width: 540px;
+}
+
+[data-dpr="2"] .main {
+  max-width: 1080px;
+}
+
+[data-dpr="3"] .main {
+  max-width: 1620px;
+}
+
+.firm_order {
+  overflow: hidden;
+  margin: 0 auto;
+  margin-bottom: 0;
+  background: #f4f4f4;
+}
+
+.firm_order .tab-box {
+  background: #fff;
+  overflow: hidden;
+  box-shadow: 0 0.013333rem 0.16rem #ccc;
+  z-index: 888;
+}
+
+.firm_order .tab-box a {
+  width: 1.693333rem;
+  margin: 0 0.4rem;
+  padding: 0.266667rem 0;
+  font-size: 0.4rem;
+  color: #444;
+  text-align: center;
+  float: left;
+}
+
+.firm_order .tab-box .on {
+  color: #ff4c01;
+}
+
+[data-dpr="1"] .firm_order .tab-box .on {
+  border-bottom: solid 1px #ff4c01;
+}
+
+[data-dpr="2"] .firm_order .tab-box .on {
+  border-bottom: solid 2px #ff4c01;
+}
+
+[data-dpr="3"] .firm_order .tab-box .on {
+  border-bottom: solid 3px #ff4c01;
+}
+
+.firm_order .dianpu {
+  overflow: hidden;
+
+  margin-top: 0.266667rem;
+}
+
+.firm_order .dianpu dl {
+  overflow: hidden;
+  padding: 0.333333rem 0.4rem;
+}
+
+[data-dpr="1"] .firm_order .dianpu dl {
+  border-bottom: solid 1px #ededed;
+}
+
+[data-dpr="2"] .firm_order .dianpu dl {
+  border-bottom: solid 2px #ededed;
+}
+
+[data-dpr="3"] .firm_order .dianpu dl {
+  border-bottom: solid 3px #ededed;
+}
+
+.firm_order .dianpu dl dt {
+  color: #444;
+  font-size: 0.373333rem;
+  float: left;
+  max-width: 2rem;
+  word-wrap: normal;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.firm_order .dianpu dl dd {
+  float: left;
+}
+
+.firm_order .dianpu dl dd img {
+  width: 0.133333rem;
+  margin: 0.146667rem 0.266667rem;
+  vertical-align: middle;
+}
+
+.firm_order .dianpu dl .stateOn {
+  float: right;
+  color: #aaa;
+  font-size: 0.373333rem;
+}
+.firm_order .dianpu dl .state {
+    float: right;
+    color: #e60033;
+    font-size: 0.373333rem;
+}
+.firm_order .dianpu ul {
+  overflow: hidden;
+  padding: 0.266667rem 0.373333rem;
+  position: relative;
+}
+
+[data-dpr="1"] .firm_order .dianpu ul {
+  border-bottom: solid 1px #ededed;
+}
+
+[data-dpr="2"] .firm_order .dianpu ul {
+  border-bottom: solid 2px #ededed;
+}
+
+[data-dpr="3"] .firm_order .dianpu ul {
+  border-bottom: solid 3px #ededed;
+}
+
+.firm_order .dianpu ul li {
+  float: left;
+  margin-right: 0.373333rem;
+}
+
+.firm_order .dianpu ul li img {
+  width: 1.973333rem;
+  position: static;
+}
+
+.firm_order .dianpu ul img {
+  width: 0.133333rem;
+  position: absolute;
+  right: 0.4rem;
+  top: 1.173333rem;
+}
+
+.orderList-name{
+  position: absolute;
+  top: 16px;
+  left: 92px;
+  color: #444;
+}
+
+.firm_order .dianpu ul li:last-child {
+  margin: 0;
+}
+
+.firm_order .dianpu ol {
+  overflow: hidden;
+  margin: 0.4rem;
+}
+
+.firm_order .dianpu ol li {
+  float: right;
+  font-size: 0.4rem;
+  margin-left: 0.266667rem;
+  color: #444;
+}
+
+.firm_order .dianpu ol li i {
+  font-size: 0.48rem;
+  font-style: normal;
+  display: inline-block;
+}
+
+.firm_order .dianpu ol li:last-child {
+  padding-top: 0.08rem;
+}
+
+.firm_order .dianpu .btn-box {
+  overflow: hidden;
+}
+
+[data-dpr="1"] .firm_order .dianpu .btn-box {
+  border-top: solid 1px #ededed;
+}
+
+[data-dpr="2"] .firm_order .dianpu .btn-box {
+  border-top: solid 2px #ededed;
+}
+
+[data-dpr="3"] .firm_order .dianpu .btn-box {
+  border-top: solid 3px #ededed;
+}
+
+.firm_order .dianpu .btn-box a {
+  display: inline-block;
+  float: right;
+  width: 2.293333rem;
+  height: 0.866667rem;
+  line-height: 0.866667rem;
+  font-size: 0.4rem;
+  color: #444;
+  border-radius: 0.106667rem;
+  margin: 0.266667rem 0;
+  margin-right: 0.266667rem;
+  text-align: center;
+}
+
+[data-dpr="1"] .firm_order .dianpu .btn-box a {
+  border: solid 1px #aaa;
+}
+
+[data-dpr="2"] .firm_order .dianpu .btn-box a {
+  border: solid 2px #aaa;
+}
+
+[data-dpr="3"] .firm_order .dianpu .btn-box a {
+  border: solid 3px #aaa;
+}
+
+.firm_order .dianpu .btn-box .currentA {
+  color: #ff4c01;
+}
+
+[data-dpr="1"] .firm_order .dianpu .btn-box .currentA {
+  border: solid 1px #ff4c01;
+}
+
+[data-dpr="2"] .firm_order .dianpu .btn-box .currentA {
+  border: solid 2px #ff4c01;
+}
+
+[data-dpr="3"] .firm_order .dianpu .btn-box .currentA {
+  border: solid 3px #ff4c01;
+}
+
+.firm_order .index dl .state {
+  color: #ff4c01;
+}
+
+.firm_No {
+    background: url(../images/nodd.png) no-repeat center center;
+    background-size: 3.693333rem 4.96rem;
+    width: 100%;
+    height: 80%;
+    position: absolute;
+    left: 0;
+    top: 20%;
+    z-index: 0;
+}
+
+.tab-box2 , .tab-box3 , .tab-box4 {display: none;}
+.orderList { margin-bottom: 0.266667rem;   background: #fff; }
+.tab-fix {
+    position: fixed;
+    top:0px;
+    left: 0px;
+}
+
+.am-share {
+    bottom: -1.866667rem;
+    left: 0;
+    position: fixed;
+    width: 100%;
+    z-index: 1110;
+    background-color: #fff;
+    -webkit-transform: translateY(100%);
+    -ms-transform: translateY(100%);
+    -o-transform: translateY(100%);
+    transform: translateY(100%);
+    -webkit-transition: -webkit-transform 300ms;
+    transition: -webkit-transform 300ms;
+    -o-transition: -o-transform 300ms;
+    transition: transform 300ms;
+    transition: transform 300ms, -webkit-transform 300ms, -o-transform 300ms;
+}
+
+.am-share .am-share-footer {
+    height: 1.466667rem;
+    margin: 0 0.4rem;
+    border-bottom: 0.013333rem #e0e0e0 solid;
+    line-height: 1.466667rem;
+    font-size: 0.426667rem;
+    color: #444;
+}
+
+.am-share .am-share-footer .share_btn {
+    display: block;
+    position: absolute;
+    top: 0.066667rem;
+    right: 0.133333rem;
+    border: none;
+    width: .8rem;
+    height: .8rem;
+    border-radius: 0;
+    cursor: pointer;
+    -webkit-transition: background-color 300ms ease-out 0s, border-color 300ms ease-out 0s;
+    -o-transition: background-color 300ms ease-out 0s, border-color 300ms ease-out 0s;
+    transition: background-color 300ms ease-out 0s, border-color 300ms ease-out 0s;
+    vertical-align: middle;
+    white-space: nowrap;
+    font-family: "微软雅黑";
+}
+
+.am-share .am-share-footer .share_btn img {
+    width: 0.453333rem;
+    height: 0.426667rem;
+}
+
+.am-share .am-share-sns {
+    background-color: #fff;
+    padding: 0 5% 5%;
+    height: auto;
+    zoom: 1;
+}
+
+.am-share .shop-submitpay {
+    background-color: #fff;
+    margin: 0  0.4rem;
+}
+
+.am-share .shop-submitpay label {
+    display: block;
+    height: 1.306667rem;
+    line-height: 1.306667rem;
+    border-bottom: 0.026667rem solid #ededed;
+}
+
+.am-share .shop-submitpay label span {
+    font-size: 0.373333rem;
+    color: #444;
+    margin-left: 0.493333rem;
+    float: left;
+}
+
+.am-share .shop-submitpay label span img {
+    width: 0.613333rem;
+    height: 0.613333rem;
+    vertical-align: middle;
+    margin-right: 0.213333rem;
+}
+
+.am-share .shop-submitpay label input {
+    position: absolute;
+    width: 0;
+    height: 0;
+    opacity: 0;
+}
+
+.am-share .shop-submitpay label i {
+    width: 0.533333rem;
+    float: right;
+    padding-left: 0.413333rem;
+    padding-right: 0.266667rem;
+    height: 1.306667rem;
+    background: url("../images/shop-carcheck.png") no-repeat 0.413333rem center;
+    background-size: 0.533333rem;
+}
+
+.am-share .shop-submitpay label input:checked + i {
+    background: url("../images/shop-carchecked.png") no-repeat 0.413333rem center;
+    background-size: 0.533333rem;
+}
+
+.am-share .shop-btn {
+    width: 100%;
+    height: 1.28rem;
+    margin-top: 0.666667rem;
+    line-height: 1.28rem;
+    text-align: center;
+    background-color: #ff4c01;
+    color: #fff;
+    font-size: 0.48rem;
+    display: block;
+    margin-bottom: 1.866667rem;
+    border: none;
+}
+
+.am-modal-active {
+    -o-transform: translateY(0);
+    transform: translateY(0);
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0);
+}
+
+.am-modal-out {
+    z-index: 1109;
+    -webkit-transform: translateY(100%);
+    -ms-transform: translateY(100%);
+    -o-transform: translateY(100%);
+    transform: translateY(100%);
+}
+
+.sharebg {
+    background-color: rgba(0, 0, 0, 0.6);
+    bottom: 0;
+    height: 100%;
+    left: 0;
+    opacity: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 100%;
+    z-index: 1100;
+    display: none;
+}
+
+.sharebg-active {
+    opacity: 1;
+    display: block;
+}
+
+.am-share .bottom {
+    padding: 0;
+}
+
+.shop-submitpay label:last-child {
+    border-bottom: 0;
+}
+
+
+
+
+.shop-carshade {
+    background: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    z-index: 12;
+    width: 100%;
+    height: 100%;
+    left:0px;
+    top:0px;
+    display: none;
+    z-index: 9999;
+}
+
+.shop-carshade .shop-carmodel {
+    width: 7.2rem;
+    height: 2.986667rem;
+    background-color: #fff;
+    border-radius: 0.266667rem;
+    position: absolute;
+    left: 50%;
+    margin-left: -3.6rem;
+    top: 50%;
+    margin-top: -1.493333rem;
+    z-index: 999999;
+}
+
+.shop-carshade .shop-carmodel .model {
+    height: 1.8rem;
+    line-height: 1.8rem;
+    text-align: center;
+    font-size: 0.453333rem;
+}
+
+.shop-carshade .shop-carmodel .model-btn {
+    border-top: 0.026667rem solid #e1e1e1;
+}
+
+.shop-carshade .shop-carmodel .model-btn a {
+    font-size: 0.453333rem;
+    color: #0033b1;
+    float: left;
+    width: 50%;
+    box-sizing: border-box;
+    height: 1.146667rem;
+    line-height: 1.146667rem;
+    text-align: center;
+}
+
+.shop-carshade .shop-carmodel .model-btn .model-btn-no {
+    border-right: 0.026667rem solid #e1e1e1;
+}
+
+
+.shop_payPass {
+    margin:  .4rem;
+    width: 90%;
+}
+.shop_payPass input {
+    height: 1rem;
+    line-height: 1rem;
+    width: 96%;
+    padding: 0 2%;
+    border: 0.026667rem solid #ededed;
+}

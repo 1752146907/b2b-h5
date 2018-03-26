@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>易订销</title>
+  <meta name="keywords" content="易订销"/>
+  <meta name="description" content="易订销"/>
+  <meta name="title" content="易订销"/>
+  <meta content="telephone=no,email=no,address=no" name="format-detection"/>
+  <meta name="apple-mobile-web-app-capable" content="yes"/>
+  <meta name="apple-mobile-web-app-status-bar-style" content="blank"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,minimal-ui"/>
+  <!--开始css引入-->
+
+  <!--本页专用样式-->
+  <link rel="stylesheet" href="css/address-add.css"/>
+  <link rel="stylesheet" href="../common-assets/css/title_footer.css"/>
+  <!--结束css引入-->
+
+  <!--引入js文件开始-->
+  <script src="../common-assets/js/jquery-2.2.3.min.js"></script>
+  <script src="../common-assets/js/flexible.js"></script>
+  <script src="../common-assets/js/flexible_css.js"></script>
+  <!--引入js文件结束-->
+  <script src="js/jquery.base64.js"></script>
+  <script src="js/getJson.js"></script>
+</head>
+<body>
+<div class="main">
+  <div class="header">
+    <div class="left">
+      <a class="top-back"  onclick="window.history.go(-1)">
+        <img src="../common-assets/img/top-back.png">
+      </a>
+    </div>
+    <div class="title">
+      <h1>新增地址</h1>
+    </div>
+  </div>
+
+  <div class="address">
+    <div class="address-add">
+      <ul>
+        <li class="clearfix">
+          <span>收货人</span>
+          <input class="addname" placeholder="请输入收货人姓名" type="text">
+        </li>
+        <li class="clearfix">
+          <span>手机号码</span>
+          <input class="addtel" placeholder="请输入收货人电话" type="text">
+        </li>
+        <li class="clearfix">
+          <span>所在地区</span>
+          <a class="address-adres" href="javascript:;">请选择</a>
+        </li>
+        <li class="clearfix">
+          <span>详细地址</span>
+          <input class="addinfo" placeholder="请输入详细街道地址" type="text">
+        </li>
+        <li class="clearfix">
+          <label class="shop-carcheck shop-checkdef">
+            <input type="checkbox">
+            <span></span>
+            设为默认地址
+          </label>
+        </li>
+      </ul>
+    </div>
+    <a class="address-btn" href="javascript:;">保存并使用</a>
+  </div>
+
+  <div class="address-state">
+    <div class="address-back"><a href="javascript:;"><img src="../common-assets/img/top-back.png">选择地区</a></div>
+    <ul class="address-citylist">
+    </ul>
+  </div>
+  <div class="address-city">
+    <div class="address-back"><a href="javascript:;"><img src="../common-assets/img/top-back.png">选择地区</a></div>
+    <ul class="address-citylist">
+    </ul>
+  </div>
+  <div class="address-town">
+    <div class="address-back"><a href="javascript:;"><img src="../common-assets/img/top-back.png">选择地区</a></div>
+    <ul class="address-citylist">
+    </ul>
+  </div>
+</div>
+<script src="js/address-add.js"></script>
+</body>
+</html>

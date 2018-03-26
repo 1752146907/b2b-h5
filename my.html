@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>会员中心</title>
+    <meta name="keywords" content="会员中心"/>
+    <meta name="description" content="会员中心"/>
+    <meta name="title" content="会员中心"/>
+    <meta content="telephone=no,email=no,address=no" name="format-detection"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="blank"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,minimal-ui"/>
+    <!--开始css引入-->
+    <!--本页专用样式-->
+    <link rel="stylesheet" href="css/my.css"/>
+    <!--结束css引入-->
+    <!--引入js文件开始-->
+    <script src="../common-assets/js/flexible.js"></script>
+    <script src="../common-assets/js/flexible_css.js"></script>
+    <!--引入jq库文件-->
+    <script src="../common-assets/js/jquery-2.2.3.min.js"></script>
+    <!--引入全局效果配置文件-->
+    <!--引入js文件结束-->
+    <script src="js/jquery.base64.js" ></script>
+    <script src="js/getJson.js" ></script>
+</head>
+<section class='wrapper'>
+    <section class="shopHead"><a onclick="window.history.go(-1)"><img src="images/logo-back.png"> </a>会员中心</section>
+    <section class="myLogin login">
+        <img src=""><a href="login.html">注册登录</a>
+    </section>
+    <section class="myLogin loginSate">
+        <img src="images/admin.png"><a></a>
+    </section>
+    <section class="myOrder">
+        <div class="orderTop"><a ><span>全部订单</span><img src="images/m0.png"> 我的订单</a></div>
+        <div class="orderBot">
+            <ul>
+                <li><a class="orderM1 payment" >待付款</a></li>
+                <li><a class="orderM2 delivery" >待发货</a></li>
+                <li><a class="orderM3 pickup" >待收货</a></li>
+                <li><a class="orderM4 back" >退款/售后</a></li>
+            </ul>
+        </div>
+    </section>
+    <section class="myOther">
+        <div class="otherList">
+            <ul>
+                <li><a class="otherL1 collect">收藏商品</a></li>
+                <li><a class="otherL3 address">地址管理</a></li>
+                <li><a class="otherL4 history">浏览足迹</a></li>
+                <li><a class="otherL5 setup">设置</a></li>
+
+            </ul>
+        </div>
+    </section>
+    <section class="bot">
+        <ul>
+            <li><a class="index"><i class="ico ico1"></i>首页</a></li>
+            <li><a class="shopCar"><i class="ico ico2"></i>购物车<em></em></a></li>
+            <li class="botOn"><a href="#"><i class="ico ico3"></i>我</a></li>
+        </ul>
+    </section>
+</section>
+<script src="js/my.js" ></script>
+
+</body>
+</html>

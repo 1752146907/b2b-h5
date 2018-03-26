@@ -1,0 +1,103 @@
+body,
+html {
+  background-color: #f3f3f3;
+  height: 100%;
+}
+
+.main {
+  height: 100%;
+}
+
+.history {
+  height: 100%;
+  overflow-y: auto;
+  box-sizing: border-box;
+}
+
+.history .history-time {
+  height: 0.8rem;
+  line-height: 0.8rem;
+  font-size: 0.293333rem;
+  color: #aaa;
+  text-indent: 0.333333rem;
+}
+
+.shoplist {
+  border-top: 0.026667rem solid #eee;
+  border-bottom: 0.026667rem solid #eee;
+  background-color: #fff;
+  padding-left: 0.333333rem;
+}
+
+.shop_del{
+  position: absolute;
+  right: 0px;
+  height: 2.4rem;
+  padding:0px 12px;
+  font-size: 16px;
+  background: #ff4c01;
+  color: #fff;
+  border:none;
+  display: none;
+}
+
+.shoplist li {
+  border-bottom: 0.026667rem solid #eee;
+  padding: 0.32rem 0;
+}
+
+.shoplist li a {
+  display: block;
+  position: relative;
+}
+
+.shoplist li .history-img {
+  float: left;
+}
+
+.shoplist li .history-img img {
+  width: 2.24rem;
+  height: 2.24rem;
+}
+
+.shoplist li .history-info {
+  float: left;
+  padding-left: 0.4rem;
+  width: 6.533333rem;
+}
+
+.shoplist li .history-info .history-title {
+  font-size: 0.373333rem;
+  color: #444;
+  line-height: 0.453333rem;
+  max-height: 0.88rem;
+  overflow: hidden;
+}
+
+.shoplist li .history-info p {
+  font-size: 0.32rem;
+  color: #aaa;
+  padding-top: 0.106667rem;
+}
+
+.shoplist li .history-info .history-price {
+  padding-top: 0.32rem;
+}
+
+.shoplist li .history-info .history-price span {
+  font-size: 0.48rem;
+  color: #ff4c01;
+  float: left;
+}
+
+.shoplist li .history-info .history-price i {
+  float: right;
+  color: #444;
+  font-size: 0.373333rem;
+  font-style: normal;
+  padding-top: 0.053333rem;
+}
+
+.shoplist li:last-child {
+  border-bottom: none;
+}

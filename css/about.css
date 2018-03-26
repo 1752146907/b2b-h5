@@ -1,0 +1,16 @@
+body {
+  background-color: #f3f3f3;
+}
+.conten{text-align: center;}
+.conten .info{}
+.conten .info img{
+  width: 117px;
+  height: 38px;
+  padding-top: 36%;
+}
+.conten .info .dition{
+  width: 88%;
+  margin:0 auto;
+  padding-top:48%;
+  line-height: 20px;
+}
